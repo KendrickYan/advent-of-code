@@ -33,6 +33,9 @@ def write_logs(filename: str = 'general.log', log_level: int = logging.DEBUG) ->
     Just using a simple basicConfig to write the logs. Planning to use more personalised logs in the future.
     """
 
+    import os
+    import logging, logging.handlers
+
     if not os.path.exists('logs'):
         os.makedirs('logs', exist_ok=True)
     logging.basicConfig(filename='logs/' + filename, filemode='w', format='[%(asctime)s] %(levelname)s | %(name)s - %(message)s', level=log_level, datefmt='%Y-%m-%d %H:%M:%S')
