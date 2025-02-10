@@ -1,0 +1,339 @@
+[2025-02-10 15:08:37] DEBUG | root - line: lf AND lq -> ls
+[2025-02-10 15:08:37] DEBUG | root - line: iu RSHIFT 1 -> jn
+[2025-02-10 15:08:37] DEBUG | root - line: bo OR bu -> bv
+[2025-02-10 15:08:37] DEBUG | root - line: gj RSHIFT 1 -> hc
+[2025-02-10 15:08:37] DEBUG | root - line: et RSHIFT 2 -> eu
+[2025-02-10 15:08:37] DEBUG | root - line: bv AND bx -> by
+[2025-02-10 15:08:37] DEBUG | root - line: is OR it -> iu
+[2025-02-10 15:08:37] DEBUG | root - line: b OR n -> o
+[2025-02-10 15:08:37] DEBUG | root - line: gf OR ge -> gg
+[2025-02-10 15:08:37] DEBUG | root - line: NOT kt -> ku
+[2025-02-10 15:08:37] DEBUG | root - line: ea AND eb -> ed
+[2025-02-10 15:08:37] DEBUG | root - line: kl OR kr -> ks
+[2025-02-10 15:08:37] DEBUG | root - line: hi AND hk -> hl
+[2025-02-10 15:08:37] DEBUG | root - line: au AND av -> ax
+[2025-02-10 15:08:37] DEBUG | root - line: lf RSHIFT 2 -> lg
+[2025-02-10 15:08:37] DEBUG | root - line: dd RSHIFT 3 -> df
+[2025-02-10 15:08:37] DEBUG | root - line: eu AND fa -> fc
+[2025-02-10 15:08:37] DEBUG | root - line: df AND dg -> di
+[2025-02-10 15:08:37] DEBUG | root - line: ip LSHIFT 15 -> it
+[2025-02-10 15:08:37] DEBUG | root - line: NOT el -> em
+[2025-02-10 15:08:37] DEBUG | root - line: et OR fe -> ff
+[2025-02-10 15:08:37] DEBUG | root - line: fj LSHIFT 15 -> fn
+[2025-02-10 15:08:37] DEBUG | root - line: t OR s -> u
+[2025-02-10 15:08:37] DEBUG | root - line: ly OR lz -> ma
+[2025-02-10 15:08:37] DEBUG | root - line: ko AND kq -> kr
+[2025-02-10 15:08:37] DEBUG | root - line: NOT fx -> fy
+[2025-02-10 15:08:37] DEBUG | root - line: et RSHIFT 1 -> fm
+[2025-02-10 15:08:37] DEBUG | root - line: eu OR fa -> fb
+[2025-02-10 15:08:37] DEBUG | root - line: dd RSHIFT 2 -> de
+[2025-02-10 15:08:37] DEBUG | root - line: NOT go -> gp
+[2025-02-10 15:08:37] DEBUG | root - line: kb AND kd -> ke
+[2025-02-10 15:08:37] DEBUG | root - line: hg OR hh -> hi
+[2025-02-10 15:08:37] DEBUG | root - line: jm LSHIFT 1 -> kg
+[2025-02-10 15:08:37] DEBUG | root - line: NOT cn -> co
+[2025-02-10 15:08:37] DEBUG | root - line: jp RSHIFT 2 -> jq
+[2025-02-10 15:08:37] DEBUG | root - line: jp RSHIFT 5 -> js
+[2025-02-10 15:08:37] DEBUG | root - line: 1 AND io -> ip
+[2025-02-10 15:08:37] DEBUG | root - line: eo LSHIFT 15 -> es
+[2025-02-10 15:08:37] DEBUG | root - line: 1 AND jj -> jk
+[2025-02-10 15:08:37] DEBUG | root - line: g AND i -> j
+[2025-02-10 15:08:37] DEBUG | root - line: ci RSHIFT 3 -> ck
+[2025-02-10 15:08:37] DEBUG | root - line: gn AND gp -> gq
+[2025-02-10 15:08:37] DEBUG | root - line: fs AND fu -> fv
+[2025-02-10 15:08:37] DEBUG | root - line: lj AND ll -> lm
+[2025-02-10 15:08:37] DEBUG | root - line: jk LSHIFT 15 -> jo
+[2025-02-10 15:08:37] DEBUG | root - line: iu RSHIFT 3 -> iw
+[2025-02-10 15:08:37] DEBUG | root - line: NOT ii -> ij
+[2025-02-10 15:08:37] DEBUG | root - line: 1 AND cc -> cd
+[2025-02-10 15:08:37] DEBUG | root - line: bn RSHIFT 3 -> bp
+[2025-02-10 15:08:37] DEBUG | root - line: NOT gw -> gx
+[2025-02-10 15:08:37] DEBUG | root - line: NOT ft -> fu
+[2025-02-10 15:08:37] DEBUG | root - line: jn OR jo -> jp
+[2025-02-10 15:08:37] DEBUG | root - line: iv OR jb -> jc
+[2025-02-10 15:08:37] DEBUG | root - line: hv OR hu -> hw
+[2025-02-10 15:08:37] DEBUG | root - line: 19138 -> b
+[2025-02-10 15:08:37] DEBUG | root - line: gj RSHIFT 5 -> gm
+[2025-02-10 15:08:37] DEBUG | root - line: hq AND hs -> ht
+[2025-02-10 15:08:37] DEBUG | root - line: dy RSHIFT 1 -> er
+[2025-02-10 15:08:37] DEBUG | root - line: ao OR an -> ap
+[2025-02-10 15:08:37] DEBUG | root - line: ld OR le -> lf
+[2025-02-10 15:08:37] DEBUG | root - line: bk LSHIFT 1 -> ce
+[2025-02-10 15:08:37] DEBUG | root - line: bz AND cb -> cc
+[2025-02-10 15:08:37] DEBUG | root - line: bi LSHIFT 15 -> bm
+[2025-02-10 15:08:37] DEBUG | root - line: il AND in -> io
+[2025-02-10 15:08:37] DEBUG | root - line: af AND ah -> ai
+[2025-02-10 15:08:37] DEBUG | root - line: as RSHIFT 1 -> bl
+[2025-02-10 15:08:37] DEBUG | root - line: lf RSHIFT 3 -> lh
+[2025-02-10 15:08:37] DEBUG | root - line: er OR es -> et
+[2025-02-10 15:08:37] DEBUG | root - line: NOT ax -> ay
+[2025-02-10 15:08:37] DEBUG | root - line: ci RSHIFT 1 -> db
+[2025-02-10 15:08:37] DEBUG | root - line: et AND fe -> fg
+[2025-02-10 15:08:37] DEBUG | root - line: lg OR lm -> ln
+[2025-02-10 15:08:37] DEBUG | root - line: k AND m -> n
+[2025-02-10 15:08:37] DEBUG | root - line: hz RSHIFT 2 -> ia
+[2025-02-10 15:08:37] DEBUG | root - line: kh LSHIFT 1 -> lb
+[2025-02-10 15:08:37] DEBUG | root - line: NOT ey -> ez
+[2025-02-10 15:08:37] DEBUG | root - line: NOT di -> dj
+[2025-02-10 15:08:37] DEBUG | root - line: dz OR ef -> eg
+[2025-02-10 15:08:37] DEBUG | root - line: lx -> a
+[2025-02-10 15:08:37] DEBUG | root - line: NOT iz -> ja
+[2025-02-10 15:08:37] DEBUG | root - line: gz LSHIFT 15 -> hd
+[2025-02-10 15:08:37] DEBUG | root - line: ce OR cd -> cf
+[2025-02-10 15:08:37] DEBUG | root - line: fq AND fr -> ft
+[2025-02-10 15:08:37] DEBUG | root - line: at AND az -> bb
+[2025-02-10 15:08:37] DEBUG | root - line: ha OR gz -> hb
+[2025-02-10 15:08:37] DEBUG | root - line: fp AND fv -> fx
+[2025-02-10 15:08:37] DEBUG | root - line: NOT gb -> gc
+[2025-02-10 15:08:37] DEBUG | root - line: ia AND ig -> ii
+[2025-02-10 15:08:37] DEBUG | root - line: gl OR gm -> gn
+[2025-02-10 15:08:37] DEBUG | root - line: 0 -> c
+[2025-02-10 15:08:37] DEBUG | root - line: NOT ca -> cb
+[2025-02-10 15:08:37] DEBUG | root - line: bn RSHIFT 1 -> cg
+[2025-02-10 15:08:37] DEBUG | root - line: c LSHIFT 1 -> t
+[2025-02-10 15:08:37] DEBUG | root - line: iw OR ix -> iy
+[2025-02-10 15:08:37] DEBUG | root - line: kg OR kf -> kh
+[2025-02-10 15:08:37] DEBUG | root - line: dy OR ej -> ek
+[2025-02-10 15:08:37] DEBUG | root - line: km AND kn -> kp
+[2025-02-10 15:08:37] DEBUG | root - line: NOT fc -> fd
+[2025-02-10 15:08:37] DEBUG | root - line: hz RSHIFT 3 -> ib
+[2025-02-10 15:08:37] DEBUG | root - line: NOT dq -> dr
+[2025-02-10 15:08:37] DEBUG | root - line: NOT fg -> fh
+[2025-02-10 15:08:37] DEBUG | root - line: dy RSHIFT 2 -> dz
+[2025-02-10 15:08:37] DEBUG | root - line: kk RSHIFT 2 -> kl
+[2025-02-10 15:08:37] DEBUG | root - line: 1 AND fi -> fj
+[2025-02-10 15:08:37] DEBUG | root - line: NOT hr -> hs
+[2025-02-10 15:08:37] DEBUG | root - line: jp RSHIFT 1 -> ki
+[2025-02-10 15:08:37] DEBUG | root - line: bl OR bm -> bn
+[2025-02-10 15:08:37] DEBUG | root - line: 1 AND gy -> gz
+[2025-02-10 15:08:37] DEBUG | root - line: gr AND gt -> gu
+[2025-02-10 15:08:37] DEBUG | root - line: db OR dc -> dd
+[2025-02-10 15:08:37] DEBUG | root - line: de OR dk -> dl
+[2025-02-10 15:08:37] DEBUG | root - line: as RSHIFT 5 -> av
+[2025-02-10 15:08:37] DEBUG | root - line: lf RSHIFT 5 -> li
+[2025-02-10 15:08:37] DEBUG | root - line: hm AND ho -> hp
+[2025-02-10 15:08:37] DEBUG | root - line: cg OR ch -> ci
+[2025-02-10 15:08:37] DEBUG | root - line: gj AND gu -> gw
+[2025-02-10 15:08:37] DEBUG | root - line: ge LSHIFT 15 -> gi
+[2025-02-10 15:08:37] DEBUG | root - line: e OR f -> g
+[2025-02-10 15:08:37] DEBUG | root - line: fp OR fv -> fw
+[2025-02-10 15:08:37] DEBUG | root - line: fb AND fd -> fe
+[2025-02-10 15:08:37] DEBUG | root - line: cd LSHIFT 15 -> ch
+[2025-02-10 15:08:37] DEBUG | root - line: b RSHIFT 1 -> v
+[2025-02-10 15:08:37] DEBUG | root - line: at OR az -> ba
+[2025-02-10 15:08:37] DEBUG | root - line: bn RSHIFT 2 -> bo
+[2025-02-10 15:08:37] DEBUG | root - line: lh AND li -> lk
+[2025-02-10 15:08:37] DEBUG | root - line: dl AND dn -> do
+[2025-02-10 15:08:37] DEBUG | root - line: eg AND ei -> ej
+[2025-02-10 15:08:37] DEBUG | root - line: ex AND ez -> fa
+[2025-02-10 15:08:37] DEBUG | root - line: NOT kp -> kq
+[2025-02-10 15:08:37] DEBUG | root - line: NOT lk -> ll
+[2025-02-10 15:08:37] DEBUG | root - line: x AND ai -> ak
+[2025-02-10 15:08:37] DEBUG | root - line: jp OR ka -> kb
+[2025-02-10 15:08:37] DEBUG | root - line: NOT jd -> je
+[2025-02-10 15:08:37] DEBUG | root - line: iy AND ja -> jb
+[2025-02-10 15:08:37] DEBUG | root - line: jp RSHIFT 3 -> jr
+[2025-02-10 15:08:37] DEBUG | root - line: fo OR fz -> ga
+[2025-02-10 15:08:37] DEBUG | root - line: df OR dg -> dh
+[2025-02-10 15:08:37] DEBUG | root - line: gj RSHIFT 2 -> gk
+[2025-02-10 15:08:37] DEBUG | root - line: gj OR gu -> gv
+[2025-02-10 15:08:37] DEBUG | root - line: NOT jh -> ji
+[2025-02-10 15:08:37] DEBUG | root - line: ap LSHIFT 1 -> bj
+[2025-02-10 15:08:37] DEBUG | root - line: NOT ls -> lt
+[2025-02-10 15:08:37] DEBUG | root - line: ir LSHIFT 1 -> jl
+[2025-02-10 15:08:37] DEBUG | root - line: bn AND by -> ca
+[2025-02-10 15:08:37] DEBUG | root - line: lv LSHIFT 15 -> lz
+[2025-02-10 15:08:37] DEBUG | root - line: ba AND bc -> bd
+[2025-02-10 15:08:37] DEBUG | root - line: cy LSHIFT 15 -> dc
+[2025-02-10 15:08:37] DEBUG | root - line: ln AND lp -> lq
+[2025-02-10 15:08:37] DEBUG | root - line: x RSHIFT 1 -> aq
+[2025-02-10 15:08:37] DEBUG | root - line: gk OR gq -> gr
+[2025-02-10 15:08:37] DEBUG | root - line: NOT kx -> ky
+[2025-02-10 15:08:37] DEBUG | root - line: jg AND ji -> jj
+[2025-02-10 15:08:37] DEBUG | root - line: bn OR by -> bz
+[2025-02-10 15:08:37] DEBUG | root - line: fl LSHIFT 1 -> gf
+[2025-02-10 15:08:37] DEBUG | root - line: bp OR bq -> br
+[2025-02-10 15:08:37] DEBUG | root - line: he OR hp -> hq
+[2025-02-10 15:08:37] DEBUG | root - line: et RSHIFT 5 -> ew
+[2025-02-10 15:08:37] DEBUG | root - line: iu RSHIFT 2 -> iv
+[2025-02-10 15:08:37] DEBUG | root - line: gl AND gm -> go
+[2025-02-10 15:08:37] DEBUG | root - line: x OR ai -> aj
+[2025-02-10 15:08:37] DEBUG | root - line: hc OR hd -> he
+[2025-02-10 15:08:37] DEBUG | root - line: lg AND lm -> lo
+[2025-02-10 15:08:37] DEBUG | root - line: lh OR li -> lj
+[2025-02-10 15:08:37] DEBUG | root - line: da LSHIFT 1 -> du
+[2025-02-10 15:08:37] DEBUG | root - line: fo RSHIFT 2 -> fp
+[2025-02-10 15:08:37] DEBUG | root - line: gk AND gq -> gs
+[2025-02-10 15:08:37] DEBUG | root - line: bj OR bi -> bk
+[2025-02-10 15:08:37] DEBUG | root - line: lf OR lq -> lr
+[2025-02-10 15:08:37] DEBUG | root - line: cj AND cp -> cr
+[2025-02-10 15:08:37] DEBUG | root - line: hu LSHIFT 15 -> hy
+[2025-02-10 15:08:37] DEBUG | root - line: 1 AND bh -> bi
+[2025-02-10 15:08:37] DEBUG | root - line: fo RSHIFT 3 -> fq
+[2025-02-10 15:08:37] DEBUG | root - line: NOT lo -> lp
+[2025-02-10 15:08:37] DEBUG | root - line: hw LSHIFT 1 -> iq
+[2025-02-10 15:08:37] DEBUG | root - line: dd RSHIFT 1 -> dw
+[2025-02-10 15:08:37] DEBUG | root - line: dt LSHIFT 15 -> dx
+[2025-02-10 15:08:37] DEBUG | root - line: dy AND ej -> el
+[2025-02-10 15:08:37] DEBUG | root - line: an LSHIFT 15 -> ar
+[2025-02-10 15:08:37] DEBUG | root - line: aq OR ar -> as
+[2025-02-10 15:08:37] DEBUG | root - line: 1 AND r -> s
+[2025-02-10 15:08:37] DEBUG | root - line: fw AND fy -> fz
+[2025-02-10 15:08:37] DEBUG | root - line: NOT im -> in
+[2025-02-10 15:08:37] DEBUG | root - line: et RSHIFT 3 -> ev
+[2025-02-10 15:08:37] DEBUG | root - line: 1 AND ds -> dt
+[2025-02-10 15:08:37] DEBUG | root - line: ec AND ee -> ef
+[2025-02-10 15:08:37] DEBUG | root - line: NOT ak -> al
+[2025-02-10 15:08:37] DEBUG | root - line: jl OR jk -> jm
+[2025-02-10 15:08:37] DEBUG | root - line: 1 AND en -> eo
+[2025-02-10 15:08:37] DEBUG | root - line: lb OR la -> lc
+[2025-02-10 15:08:37] DEBUG | root - line: iu AND jf -> jh
+[2025-02-10 15:08:37] DEBUG | root - line: iu RSHIFT 5 -> ix
+[2025-02-10 15:08:37] DEBUG | root - line: bo AND bu -> bw
+[2025-02-10 15:08:37] DEBUG | root - line: cz OR cy -> da
+[2025-02-10 15:08:37] DEBUG | root - line: iv AND jb -> jd
+[2025-02-10 15:08:37] DEBUG | root - line: iw AND ix -> iz
+[2025-02-10 15:08:37] DEBUG | root - line: lf RSHIFT 1 -> ly
+[2025-02-10 15:08:37] DEBUG | root - line: iu OR jf -> jg
+[2025-02-10 15:08:37] DEBUG | root - line: NOT dm -> dn
+[2025-02-10 15:08:37] DEBUG | root - line: lw OR lv -> lx
+[2025-02-10 15:08:37] DEBUG | root - line: gg LSHIFT 1 -> ha
+[2025-02-10 15:08:37] DEBUG | root - line: lr AND lt -> lu
+[2025-02-10 15:08:37] DEBUG | root - line: fm OR fn -> fo
+[2025-02-10 15:08:37] DEBUG | root - line: he RSHIFT 3 -> hg
+[2025-02-10 15:08:37] DEBUG | root - line: aj AND al -> am
+[2025-02-10 15:08:37] DEBUG | root - line: 1 AND kz -> la
+[2025-02-10 15:08:37] DEBUG | root - line: dy RSHIFT 5 -> eb
+[2025-02-10 15:08:37] DEBUG | root - line: jc AND je -> jf
+[2025-02-10 15:08:37] DEBUG | root - line: cm AND co -> cp
+[2025-02-10 15:08:37] DEBUG | root - line: gv AND gx -> gy
+[2025-02-10 15:08:37] DEBUG | root - line: ev OR ew -> ex
+[2025-02-10 15:08:37] DEBUG | root - line: jp AND ka -> kc
+[2025-02-10 15:08:37] DEBUG | root - line: fk OR fj -> fl
+[2025-02-10 15:08:37] DEBUG | root - line: dy RSHIFT 3 -> ea
+[2025-02-10 15:08:37] DEBUG | root - line: NOT bs -> bt
+[2025-02-10 15:08:37] DEBUG | root - line: NOT ag -> ah
+[2025-02-10 15:08:37] DEBUG | root - line: dz AND ef -> eh
+[2025-02-10 15:08:37] DEBUG | root - line: cf LSHIFT 1 -> cz
+[2025-02-10 15:08:37] DEBUG | root - line: NOT cv -> cw
+[2025-02-10 15:08:37] DEBUG | root - line: 1 AND cx -> cy
+[2025-02-10 15:08:37] DEBUG | root - line: de AND dk -> dm
+[2025-02-10 15:08:37] DEBUG | root - line: ck AND cl -> cn
+[2025-02-10 15:08:37] DEBUG | root - line: x RSHIFT 5 -> aa
+[2025-02-10 15:08:37] DEBUG | root - line: dv LSHIFT 1 -> ep
+[2025-02-10 15:08:37] DEBUG | root - line: he RSHIFT 2 -> hf
+[2025-02-10 15:08:37] DEBUG | root - line: NOT bw -> bx
+[2025-02-10 15:08:37] DEBUG | root - line: ck OR cl -> cm
+[2025-02-10 15:08:37] DEBUG | root - line: bp AND bq -> bs
+[2025-02-10 15:08:37] DEBUG | root - line: as OR bd -> be
+[2025-02-10 15:08:37] DEBUG | root - line: he AND hp -> hr
+[2025-02-10 15:08:37] DEBUG | root - line: ev AND ew -> ey
+[2025-02-10 15:08:37] DEBUG | root - line: 1 AND lu -> lv
+[2025-02-10 15:08:37] DEBUG | root - line: kk RSHIFT 3 -> km
+[2025-02-10 15:08:37] DEBUG | root - line: b AND n -> p
+[2025-02-10 15:08:37] DEBUG | root - line: NOT kc -> kd
+[2025-02-10 15:08:37] DEBUG | root - line: lc LSHIFT 1 -> lw
+[2025-02-10 15:08:37] DEBUG | root - line: km OR kn -> ko
+[2025-02-10 15:08:37] DEBUG | root - line: id AND if -> ig
+[2025-02-10 15:08:37] DEBUG | root - line: ih AND ij -> ik
+[2025-02-10 15:08:37] DEBUG | root - line: jr AND js -> ju
+[2025-02-10 15:08:37] DEBUG | root - line: ci RSHIFT 5 -> cl
+[2025-02-10 15:08:37] DEBUG | root - line: hz RSHIFT 1 -> is
+[2025-02-10 15:08:37] DEBUG | root - line: 1 AND ke -> kf
+[2025-02-10 15:08:37] DEBUG | root - line: NOT gs -> gt
+[2025-02-10 15:08:37] DEBUG | root - line: aw AND ay -> az
+[2025-02-10 15:08:37] DEBUG | root - line: x RSHIFT 2 -> y
+[2025-02-10 15:08:37] DEBUG | root - line: ab AND ad -> ae
+[2025-02-10 15:08:37] DEBUG | root - line: ff AND fh -> fi
+[2025-02-10 15:08:37] DEBUG | root - line: ci AND ct -> cv
+[2025-02-10 15:08:37] DEBUG | root - line: eq LSHIFT 1 -> fk
+[2025-02-10 15:08:37] DEBUG | root - line: gj RSHIFT 3 -> gl
+[2025-02-10 15:08:37] DEBUG | root - line: u LSHIFT 1 -> ao
+[2025-02-10 15:08:37] DEBUG | root - line: NOT bb -> bc
+[2025-02-10 15:08:37] DEBUG | root - line: NOT hj -> hk
+[2025-02-10 15:08:37] DEBUG | root - line: kw AND ky -> kz
+[2025-02-10 15:08:37] DEBUG | root - line: as AND bd -> bf
+[2025-02-10 15:08:37] DEBUG | root - line: dw OR dx -> dy
+[2025-02-10 15:08:37] DEBUG | root - line: br AND bt -> bu
+[2025-02-10 15:08:37] DEBUG | root - line: kk AND kv -> kx
+[2025-02-10 15:08:37] DEBUG | root - line: ep OR eo -> eq
+[2025-02-10 15:08:37] DEBUG | root - line: he RSHIFT 1 -> hx
+[2025-02-10 15:08:37] DEBUG | root - line: ki OR kj -> kk
+[2025-02-10 15:08:37] DEBUG | root - line: NOT ju -> jv
+[2025-02-10 15:08:37] DEBUG | root - line: ek AND em -> en
+[2025-02-10 15:08:37] DEBUG | root - line: kk RSHIFT 5 -> kn
+[2025-02-10 15:08:37] DEBUG | root - line: NOT eh -> ei
+[2025-02-10 15:08:37] DEBUG | root - line: hx OR hy -> hz
+[2025-02-10 15:08:37] DEBUG | root - line: ea OR eb -> ec
+[2025-02-10 15:08:37] DEBUG | root - line: s LSHIFT 15 -> w
+[2025-02-10 15:08:37] DEBUG | root - line: fo RSHIFT 1 -> gh
+[2025-02-10 15:08:37] DEBUG | root - line: kk OR kv -> kw
+[2025-02-10 15:08:37] DEBUG | root - line: bn RSHIFT 5 -> bq
+[2025-02-10 15:08:37] DEBUG | root - line: NOT ed -> ee
+[2025-02-10 15:08:37] DEBUG | root - line: 1 AND ht -> hu
+[2025-02-10 15:08:37] DEBUG | root - line: cu AND cw -> cx
+[2025-02-10 15:08:37] DEBUG | root - line: b RSHIFT 5 -> f
+[2025-02-10 15:08:37] DEBUG | root - line: kl AND kr -> kt
+[2025-02-10 15:08:37] DEBUG | root - line: iq OR ip -> ir
+[2025-02-10 15:08:37] DEBUG | root - line: ci RSHIFT 2 -> cj
+[2025-02-10 15:08:37] DEBUG | root - line: cj OR cp -> cq
+[2025-02-10 15:08:37] DEBUG | root - line: o AND q -> r
+[2025-02-10 15:08:37] DEBUG | root - line: dd RSHIFT 5 -> dg
+[2025-02-10 15:08:37] DEBUG | root - line: b RSHIFT 2 -> d
+[2025-02-10 15:08:37] DEBUG | root - line: ks AND ku -> kv
+[2025-02-10 15:08:37] DEBUG | root - line: b RSHIFT 3 -> e
+[2025-02-10 15:08:37] DEBUG | root - line: d OR j -> k
+[2025-02-10 15:08:37] DEBUG | root - line: NOT p -> q
+[2025-02-10 15:08:37] DEBUG | root - line: NOT cr -> cs
+[2025-02-10 15:08:37] DEBUG | root - line: du OR dt -> dv
+[2025-02-10 15:08:37] DEBUG | root - line: kf LSHIFT 15 -> kj
+[2025-02-10 15:08:37] DEBUG | root - line: NOT ac -> ad
+[2025-02-10 15:08:37] DEBUG | root - line: fo RSHIFT 5 -> fr
+[2025-02-10 15:08:37] DEBUG | root - line: hz OR ik -> il
+[2025-02-10 15:08:37] DEBUG | root - line: jx AND jz -> ka
+[2025-02-10 15:08:37] DEBUG | root - line: gh OR gi -> gj
+[2025-02-10 15:08:37] DEBUG | root - line: kk RSHIFT 1 -> ld
+[2025-02-10 15:08:37] DEBUG | root - line: hz RSHIFT 5 -> ic
+[2025-02-10 15:08:37] DEBUG | root - line: as RSHIFT 2 -> at
+[2025-02-10 15:08:37] DEBUG | root - line: NOT jy -> jz
+[2025-02-10 15:08:37] DEBUG | root - line: 1 AND am -> an
+[2025-02-10 15:08:37] DEBUG | root - line: ci OR ct -> cu
+[2025-02-10 15:08:37] DEBUG | root - line: hg AND hh -> hj
+[2025-02-10 15:08:37] DEBUG | root - line: jq OR jw -> jx
+[2025-02-10 15:08:37] DEBUG | root - line: v OR w -> x
+[2025-02-10 15:08:37] DEBUG | root - line: la LSHIFT 15 -> le
+[2025-02-10 15:08:37] DEBUG | root - line: dh AND dj -> dk
+[2025-02-10 15:08:37] DEBUG | root - line: dp AND dr -> ds
+[2025-02-10 15:08:37] DEBUG | root - line: jq AND jw -> jy
+[2025-02-10 15:08:37] DEBUG | root - line: au OR av -> aw
+[2025-02-10 15:08:37] DEBUG | root - line: NOT bf -> bg
+[2025-02-10 15:08:37] DEBUG | root - line: z OR aa -> ab
+[2025-02-10 15:08:37] DEBUG | root - line: ga AND gc -> gd
+[2025-02-10 15:08:37] DEBUG | root - line: hz AND ik -> im
+[2025-02-10 15:08:37] DEBUG | root - line: jt AND jv -> jw
+[2025-02-10 15:08:37] DEBUG | root - line: z AND aa -> ac
+[2025-02-10 15:08:37] DEBUG | root - line: jr OR js -> jt
+[2025-02-10 15:08:37] DEBUG | root - line: hb LSHIFT 1 -> hv
+[2025-02-10 15:08:37] DEBUG | root - line: hf OR hl -> hm
+[2025-02-10 15:08:37] DEBUG | root - line: ib OR ic -> id
+[2025-02-10 15:08:37] DEBUG | root - line: fq OR fr -> fs
+[2025-02-10 15:08:37] DEBUG | root - line: cq AND cs -> ct
+[2025-02-10 15:08:37] DEBUG | root - line: ia OR ig -> ih
+[2025-02-10 15:08:37] DEBUG | root - line: dd OR do -> dp
+[2025-02-10 15:08:37] DEBUG | root - line: d AND j -> l
+[2025-02-10 15:08:37] DEBUG | root - line: ib AND ic -> ie
+[2025-02-10 15:08:37] DEBUG | root - line: as RSHIFT 3 -> au
+[2025-02-10 15:08:37] DEBUG | root - line: be AND bg -> bh
+[2025-02-10 15:08:37] DEBUG | root - line: dd AND do -> dq
+[2025-02-10 15:08:37] DEBUG | root - line: NOT l -> m
+[2025-02-10 15:08:37] DEBUG | root - line: 1 AND gd -> ge
+[2025-02-10 15:08:37] DEBUG | root - line: y AND ae -> ag
+[2025-02-10 15:08:37] DEBUG | root - line: fo AND fz -> gb
+[2025-02-10 15:08:37] DEBUG | root - line: NOT ie -> if
+[2025-02-10 15:08:37] DEBUG | root - line: e AND f -> h
+[2025-02-10 15:08:37] DEBUG | root - line: x RSHIFT 3 -> z
+[2025-02-10 15:08:37] DEBUG | root - line: y OR ae -> af
+[2025-02-10 15:08:37] DEBUG | root - line: hf AND hl -> hn
+[2025-02-10 15:08:37] DEBUG | root - line: NOT h -> i
+[2025-02-10 15:08:37] DEBUG | root - line: NOT hn -> ho
+[2025-02-10 15:08:37] DEBUG | root - line: he RSHIFT 5 -> hh
