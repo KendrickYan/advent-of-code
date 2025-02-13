@@ -41,30 +41,35 @@ def write_logs(filename: str = 'general.log', log_level: int = logging.DEBUG) ->
 def get_input(filename: str = 'input.txt') -> str:
     with open(filename, 'r') as f:
         return f.read()
-    
-def generate_wires() -> dict:
-    '''Generates the dictionary that will hold the bits (value) represented by the letters (key)'''
-    dct = {}
-    for letter in 'abcdefghijklmnopqrstuvwxyz':
-        dct[letter] = 0
-    return dct
-    
-def provide_signals(instruction_lines: list[str], wire_dct: dict) -> list:
+
+def provide_signals(instruction_lines: list[str]) -> dict:
     '''Takes instructions and assign values to wires that have already been provided, then remove that instruction.
     
     eg. "0 -> c" means assign "c" : 0 in the wire dictionary.
     
-    Returns the new instructions.'''
+    Returns the wire instructions.'''
+    wire_dct = {}
+
     for line in instruction_lines:
-        line.split(' ')
-        logging.debug(f'line: {line}')
+        words_list = line.split(' ')
+
+        # Take words_lists that provide constants to wires
+        if len(words_list) == 3 and words_list[0].isdigit():
+            wire_dct[words_list[2]] = int(words_list[0])
+
+            # Remove the instruction
+            instruction_lines.remove(line)
+            
+    logging.debug(f'New instruction_lines:\n{instruction_lines}')
+
+    return wire_dct, instruction_lines
 
 def main() -> None:
     write_logs('part_1.log')
     instruction_lines = get_input().splitlines()
-    wire_dct = generate_wires()
-    # logging.debug(wire_dct)
-    provide_signals(instruction_lines, wire_dct)
+    logging.debug(f'New instruction_lines:\n{instruction_lines}')
+    wire_dct, instruction_lines = provide_signals(instruction_lines)
+    logging.debug(wire_dct)
 
 if __name__ == '__main__':
     main()
