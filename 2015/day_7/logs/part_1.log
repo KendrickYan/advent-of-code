@@ -1,1 +1,445 @@
-[2025-02-11 19:45:54] DEBUG | root - {'b': 19138, 'c': 0}
+[2025-02-22 18:38:21] DEBUG | root - Connecting c LSHIFT 1 -> t
+[2025-02-22 18:38:21] DEBUG | root - Connecting b RSHIFT 1 -> v
+[2025-02-22 18:38:21] DEBUG | root - Connecting b RSHIFT 5 -> f
+[2025-02-22 18:38:21] DEBUG | root - Connecting b RSHIFT 2 -> d
+[2025-02-22 18:38:21] DEBUG | root - Connecting b RSHIFT 3 -> e
+[2025-02-22 18:38:21] DEBUG | root - Connecting e AND f -> h
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT h -> i
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting e OR f -> g
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting g AND i -> j
+[2025-02-22 18:38:21] DEBUG | root - Connecting d OR j -> k
+[2025-02-22 18:38:21] DEBUG | root - Connecting d AND j -> l
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT l -> m
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting k AND m -> n
+[2025-02-22 18:38:21] DEBUG | root - Connecting b AND n -> p
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT p -> q
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting b OR n -> o
+[2025-02-22 18:38:21] DEBUG | root - Connecting o AND q -> r
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting 1 AND r -> s
+[2025-02-22 18:38:21] DEBUG | root - Connecting s LSHIFT 15 -> w
+[2025-02-22 18:38:21] DEBUG | root - Connecting v OR w -> x
+[2025-02-22 18:38:21] DEBUG | root - Connecting x RSHIFT 3 -> z
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting t OR s -> u
+[2025-02-22 18:38:21] DEBUG | root - Connecting x RSHIFT 1 -> aq
+[2025-02-22 18:38:21] DEBUG | root - Connecting x RSHIFT 5 -> aa
+[2025-02-22 18:38:21] DEBUG | root - Connecting x RSHIFT 2 -> y
+[2025-02-22 18:38:21] DEBUG | root - Connecting u LSHIFT 1 -> ao
+[2025-02-22 18:38:21] DEBUG | root - Connecting z OR aa -> ab
+[2025-02-22 18:38:21] DEBUG | root - Connecting z AND aa -> ac
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT ac -> ad
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting ab AND ad -> ae
+[2025-02-22 18:38:21] DEBUG | root - Connecting y AND ae -> ag
+[2025-02-22 18:38:21] DEBUG | root - Connecting y OR ae -> af
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT ag -> ah
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting af AND ah -> ai
+[2025-02-22 18:38:21] DEBUG | root - Connecting x AND ai -> ak
+[2025-02-22 18:38:21] DEBUG | root - Connecting x OR ai -> aj
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT ak -> al
+[2025-02-22 18:38:21] DEBUG | root - Connecting aj AND al -> am
+[2025-02-22 18:38:21] DEBUG | root - Connecting 1 AND am -> an
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting ao OR an -> ap
+[2025-02-22 18:38:21] DEBUG | root - Connecting ap LSHIFT 1 -> bj
+[2025-02-22 18:38:21] DEBUG | root - Connecting an LSHIFT 15 -> ar
+[2025-02-22 18:38:21] DEBUG | root - Connecting aq OR ar -> as
+[2025-02-22 18:38:21] DEBUG | root - Connecting as RSHIFT 2 -> at
+[2025-02-22 18:38:21] DEBUG | root - Connecting as RSHIFT 3 -> au
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting as RSHIFT 1 -> bl
+[2025-02-22 18:38:21] DEBUG | root - Connecting as RSHIFT 5 -> av
+[2025-02-22 18:38:21] DEBUG | root - Connecting au OR av -> aw
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting au AND av -> ax
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT ax -> ay
+[2025-02-22 18:38:21] DEBUG | root - Connecting aw AND ay -> az
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting at AND az -> bb
+[2025-02-22 18:38:21] DEBUG | root - Connecting at OR az -> ba
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT bb -> bc
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting ba AND bc -> bd
+[2025-02-22 18:38:21] DEBUG | root - Connecting as OR bd -> be
+[2025-02-22 18:38:21] DEBUG | root - Connecting as AND bd -> bf
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT bf -> bg
+[2025-02-22 18:38:21] DEBUG | root - Connecting be AND bg -> bh
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting 1 AND bh -> bi
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting bi LSHIFT 15 -> bm
+[2025-02-22 18:38:21] DEBUG | root - Connecting bl OR bm -> bn
+[2025-02-22 18:38:21] DEBUG | root - Connecting bn RSHIFT 2 -> bo
+[2025-02-22 18:38:21] DEBUG | root - Connecting bj OR bi -> bk
+[2025-02-22 18:38:21] DEBUG | root - Connecting bn RSHIFT 5 -> bq
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting bn RSHIFT 3 -> bp
+[2025-02-22 18:38:21] DEBUG | root - Connecting bk LSHIFT 1 -> ce
+[2025-02-22 18:38:21] DEBUG | root - Connecting bn RSHIFT 1 -> cg
+[2025-02-22 18:38:21] DEBUG | root - Connecting bp OR bq -> br
+[2025-02-22 18:38:21] DEBUG | root - Connecting bp AND bq -> bs
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT bs -> bt
+[2025-02-22 18:38:21] DEBUG | root - Connecting br AND bt -> bu
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting bo OR bu -> bv
+[2025-02-22 18:38:21] DEBUG | root - Connecting bo AND bu -> bw
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT bw -> bx
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting bv AND bx -> by
+[2025-02-22 18:38:21] DEBUG | root - Connecting bn AND by -> ca
+[2025-02-22 18:38:21] DEBUG | root - Connecting bn OR by -> bz
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT ca -> cb
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting bz AND cb -> cc
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting 1 AND cc -> cd
+[2025-02-22 18:38:21] DEBUG | root - Connecting ce OR cd -> cf
+[2025-02-22 18:38:21] DEBUG | root - Connecting cd LSHIFT 15 -> ch
+[2025-02-22 18:38:21] DEBUG | root - Connecting cf LSHIFT 1 -> cz
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting cg OR ch -> ci
+[2025-02-22 18:38:21] DEBUG | root - Connecting ci RSHIFT 5 -> cl
+[2025-02-22 18:38:21] DEBUG | root - Connecting ci RSHIFT 2 -> cj
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting ci RSHIFT 3 -> ck
+[2025-02-22 18:38:21] DEBUG | root - Connecting ci RSHIFT 1 -> db
+[2025-02-22 18:38:21] DEBUG | root - Connecting ck AND cl -> cn
+[2025-02-22 18:38:21] DEBUG | root - Connecting ck OR cl -> cm
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT cn -> co
+[2025-02-22 18:38:21] DEBUG | root - Connecting cm AND co -> cp
+[2025-02-22 18:38:21] DEBUG | root - Connecting cj OR cp -> cq
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting cj AND cp -> cr
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT cr -> cs
+[2025-02-22 18:38:21] DEBUG | root - Connecting cq AND cs -> ct
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting ci AND ct -> cv
+[2025-02-22 18:38:21] DEBUG | root - Connecting ci OR ct -> cu
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT cv -> cw
+[2025-02-22 18:38:21] DEBUG | root - Connecting cu AND cw -> cx
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting 1 AND cx -> cy
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting cy LSHIFT 15 -> dc
+[2025-02-22 18:38:21] DEBUG | root - Connecting cz OR cy -> da
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting db OR dc -> dd
+[2025-02-22 18:38:21] DEBUG | root - Connecting da LSHIFT 1 -> du
+[2025-02-22 18:38:21] DEBUG | root - Connecting dd RSHIFT 1 -> dw
+[2025-02-22 18:38:21] DEBUG | root - Connecting dd RSHIFT 5 -> dg
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting dd RSHIFT 3 -> df
+[2025-02-22 18:38:21] DEBUG | root - Connecting df AND dg -> di
+[2025-02-22 18:38:21] DEBUG | root - Connecting dd RSHIFT 2 -> de
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT di -> dj
+[2025-02-22 18:38:21] DEBUG | root - Connecting df OR dg -> dh
+[2025-02-22 18:38:21] DEBUG | root - Connecting dh AND dj -> dk
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting de OR dk -> dl
+[2025-02-22 18:38:21] DEBUG | root - Connecting de AND dk -> dm
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT dm -> dn
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting dl AND dn -> do
+[2025-02-22 18:38:21] DEBUG | root - Connecting dd OR do -> dp
+[2025-02-22 18:38:21] DEBUG | root - Connecting dd AND do -> dq
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT dq -> dr
+[2025-02-22 18:38:21] DEBUG | root - Connecting dp AND dr -> ds
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting 1 AND ds -> dt
+[2025-02-22 18:38:21] DEBUG | root - Connecting du OR dt -> dv
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting dt LSHIFT 15 -> dx
+[2025-02-22 18:38:21] DEBUG | root - Connecting dv LSHIFT 1 -> ep
+[2025-02-22 18:38:21] DEBUG | root - Connecting dw OR dx -> dy
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting dy RSHIFT 1 -> er
+[2025-02-22 18:38:21] DEBUG | root - Connecting dy RSHIFT 2 -> dz
+[2025-02-22 18:38:21] DEBUG | root - Connecting dy RSHIFT 5 -> eb
+[2025-02-22 18:38:21] DEBUG | root - Connecting dy RSHIFT 3 -> ea
+[2025-02-22 18:38:21] DEBUG | root - Connecting ea OR eb -> ec
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting ea AND eb -> ed
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT ed -> ee
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting ec AND ee -> ef
+[2025-02-22 18:38:21] DEBUG | root - Connecting dz AND ef -> eh
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT eh -> ei
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting dz OR ef -> eg
+[2025-02-22 18:38:21] DEBUG | root - Connecting eg AND ei -> ej
+[2025-02-22 18:38:21] DEBUG | root - Connecting dy AND ej -> el
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT el -> em
+[2025-02-22 18:38:21] DEBUG | root - Connecting dy OR ej -> ek
+[2025-02-22 18:38:21] DEBUG | root - Connecting ek AND em -> en
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting 1 AND en -> eo
+[2025-02-22 18:38:21] DEBUG | root - Connecting ep OR eo -> eq
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting eo LSHIFT 15 -> es
+[2025-02-22 18:38:21] DEBUG | root - Connecting er OR es -> et
+[2025-02-22 18:38:21] DEBUG | root - Connecting et RSHIFT 5 -> ew
+[2025-02-22 18:38:21] DEBUG | root - Connecting et RSHIFT 3 -> ev
+[2025-02-22 18:38:21] DEBUG | root - Connecting ev OR ew -> ex
+[2025-02-22 18:38:21] DEBUG | root - Connecting ev AND ew -> ey
+[2025-02-22 18:38:21] DEBUG | root - Connecting eq LSHIFT 1 -> fk
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting et RSHIFT 2 -> eu
+[2025-02-22 18:38:21] DEBUG | root - Connecting et RSHIFT 1 -> fm
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT ey -> ez
+[2025-02-22 18:38:21] DEBUG | root - Connecting ex AND ez -> fa
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting eu AND fa -> fc
+[2025-02-22 18:38:21] DEBUG | root - Connecting eu OR fa -> fb
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT fc -> fd
+[2025-02-22 18:38:21] DEBUG | root - Connecting fb AND fd -> fe
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting et OR fe -> ff
+[2025-02-22 18:38:21] DEBUG | root - Connecting et AND fe -> fg
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT fg -> fh
+[2025-02-22 18:38:21] DEBUG | root - Connecting ff AND fh -> fi
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting 1 AND fi -> fj
+[2025-02-22 18:38:21] DEBUG | root - Connecting fk OR fj -> fl
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting fj LSHIFT 15 -> fn
+[2025-02-22 18:38:21] DEBUG | root - Connecting fl LSHIFT 1 -> gf
+[2025-02-22 18:38:21] DEBUG | root - Connecting fm OR fn -> fo
+[2025-02-22 18:38:21] DEBUG | root - Connecting fo RSHIFT 1 -> gh
+[2025-02-22 18:38:21] DEBUG | root - Connecting fo RSHIFT 5 -> fr
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting fo RSHIFT 2 -> fp
+[2025-02-22 18:38:21] DEBUG | root - Connecting fo RSHIFT 3 -> fq
+[2025-02-22 18:38:21] DEBUG | root - Connecting fq OR fr -> fs
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting fq AND fr -> ft
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT ft -> fu
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting fs AND fu -> fv
+[2025-02-22 18:38:21] DEBUG | root - Connecting fp AND fv -> fx
+[2025-02-22 18:38:21] DEBUG | root - Connecting fp OR fv -> fw
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT fx -> fy
+[2025-02-22 18:38:21] DEBUG | root - Connecting fw AND fy -> fz
+[2025-02-22 18:38:21] DEBUG | root - Connecting fo AND fz -> gb
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT gb -> gc
+[2025-02-22 18:38:21] DEBUG | root - Connecting fo OR fz -> ga
+[2025-02-22 18:38:21] DEBUG | root - Connecting ga AND gc -> gd
+[2025-02-22 18:38:21] DEBUG | root - Connecting 1 AND gd -> ge
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting gf OR ge -> gg
+[2025-02-22 18:38:21] DEBUG | root - Connecting ge LSHIFT 15 -> gi
+[2025-02-22 18:38:21] DEBUG | root - Connecting gg LSHIFT 1 -> ha
+[2025-02-22 18:38:21] DEBUG | root - Connecting gh OR gi -> gj
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting gj RSHIFT 1 -> hc
+[2025-02-22 18:38:21] DEBUG | root - Connecting gj RSHIFT 5 -> gm
+[2025-02-22 18:38:21] DEBUG | root - Connecting gj RSHIFT 2 -> gk
+[2025-02-22 18:38:21] DEBUG | root - Connecting gj RSHIFT 3 -> gl
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting gl OR gm -> gn
+[2025-02-22 18:38:21] DEBUG | root - Connecting gl AND gm -> go
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT go -> gp
+[2025-02-22 18:38:21] DEBUG | root - Connecting gn AND gp -> gq
+[2025-02-22 18:38:21] DEBUG | root - Connecting gk OR gq -> gr
+[2025-02-22 18:38:21] DEBUG | root - Connecting gk AND gq -> gs
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT gs -> gt
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting gr AND gt -> gu
+[2025-02-22 18:38:21] DEBUG | root - Connecting gj AND gu -> gw
+[2025-02-22 18:38:21] DEBUG | root - Connecting gj OR gu -> gv
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT gw -> gx
+[2025-02-22 18:38:21] DEBUG | root - Connecting gv AND gx -> gy
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting 1 AND gy -> gz
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting gz LSHIFT 15 -> hd
+[2025-02-22 18:38:21] DEBUG | root - Connecting ha OR gz -> hb
+[2025-02-22 18:38:21] DEBUG | root - Connecting hc OR hd -> he
+[2025-02-22 18:38:21] DEBUG | root - Connecting he RSHIFT 3 -> hg
+[2025-02-22 18:38:21] DEBUG | root - Connecting he RSHIFT 2 -> hf
+[2025-02-22 18:38:21] DEBUG | root - Connecting he RSHIFT 1 -> hx
+[2025-02-22 18:38:21] DEBUG | root - Connecting hb LSHIFT 1 -> hv
+[2025-02-22 18:38:21] DEBUG | root - Connecting he RSHIFT 5 -> hh
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting hg OR hh -> hi
+[2025-02-22 18:38:21] DEBUG | root - Connecting hg AND hh -> hj
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT hj -> hk
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting hi AND hk -> hl
+[2025-02-22 18:38:21] DEBUG | root - Connecting hf OR hl -> hm
+[2025-02-22 18:38:21] DEBUG | root - Connecting hf AND hl -> hn
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT hn -> ho
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting hm AND ho -> hp
+[2025-02-22 18:38:21] DEBUG | root - Connecting he OR hp -> hq
+[2025-02-22 18:38:21] DEBUG | root - Connecting he AND hp -> hr
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT hr -> hs
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting hq AND hs -> ht
+[2025-02-22 18:38:21] DEBUG | root - Connecting 1 AND ht -> hu
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting hv OR hu -> hw
+[2025-02-22 18:38:21] DEBUG | root - Connecting hu LSHIFT 15 -> hy
+[2025-02-22 18:38:21] DEBUG | root - Connecting hw LSHIFT 1 -> iq
+[2025-02-22 18:38:21] DEBUG | root - Connecting hx OR hy -> hz
+[2025-02-22 18:38:21] DEBUG | root - Connecting hz RSHIFT 5 -> ic
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting hz RSHIFT 2 -> ia
+[2025-02-22 18:38:21] DEBUG | root - Connecting hz RSHIFT 3 -> ib
+[2025-02-22 18:38:21] DEBUG | root - Connecting hz RSHIFT 1 -> is
+[2025-02-22 18:38:21] DEBUG | root - Connecting ib OR ic -> id
+[2025-02-22 18:38:21] DEBUG | root - Connecting ib AND ic -> ie
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT ie -> if
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting id AND if -> ig
+[2025-02-22 18:38:21] DEBUG | root - Connecting ia OR ig -> ih
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting ia AND ig -> ii
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT ii -> ij
+[2025-02-22 18:38:21] DEBUG | root - Connecting ih AND ij -> ik
+[2025-02-22 18:38:21] DEBUG | root - Connecting hz OR ik -> il
+[2025-02-22 18:38:21] DEBUG | root - Connecting hz AND ik -> im
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT im -> in
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting il AND in -> io
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting 1 AND io -> ip
+[2025-02-22 18:38:21] DEBUG | root - Connecting iq OR ip -> ir
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting ip LSHIFT 15 -> it
+[2025-02-22 18:38:21] DEBUG | root - Connecting ir LSHIFT 1 -> jl
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting is OR it -> iu
+[2025-02-22 18:38:21] DEBUG | root - Connecting iu RSHIFT 3 -> iw
+[2025-02-22 18:38:21] DEBUG | root - Connecting iu RSHIFT 2 -> iv
+[2025-02-22 18:38:21] DEBUG | root - Connecting iu RSHIFT 5 -> ix
+[2025-02-22 18:38:21] DEBUG | root - Connecting iw AND ix -> iz
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting iu RSHIFT 1 -> jn
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT iz -> ja
+[2025-02-22 18:38:21] DEBUG | root - Connecting iw OR ix -> iy
+[2025-02-22 18:38:21] DEBUG | root - Connecting iy AND ja -> jb
+[2025-02-22 18:38:21] DEBUG | root - Connecting iv AND jb -> jd
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting iv OR jb -> jc
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT jd -> je
+[2025-02-22 18:38:21] DEBUG | root - Connecting jc AND je -> jf
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting iu AND jf -> jh
+[2025-02-22 18:38:21] DEBUG | root - Connecting iu OR jf -> jg
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT jh -> ji
+[2025-02-22 18:38:21] DEBUG | root - Connecting jg AND ji -> jj
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting 1 AND jj -> jk
+[2025-02-22 18:38:21] DEBUG | root - Connecting jk LSHIFT 15 -> jo
+[2025-02-22 18:38:21] DEBUG | root - Connecting jn OR jo -> jp
+[2025-02-22 18:38:21] DEBUG | root - Connecting jp RSHIFT 1 -> ki
+[2025-02-22 18:38:21] DEBUG | root - Connecting jp RSHIFT 3 -> jr
+[2025-02-22 18:38:21] DEBUG | root - Connecting jl OR jk -> jm
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting jm LSHIFT 1 -> kg
+[2025-02-22 18:38:21] DEBUG | root - Connecting jp RSHIFT 2 -> jq
+[2025-02-22 18:38:21] DEBUG | root - Connecting jp RSHIFT 5 -> js
+[2025-02-22 18:38:21] DEBUG | root - Connecting jr AND js -> ju
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT ju -> jv
+[2025-02-22 18:38:21] DEBUG | root - Connecting jr OR js -> jt
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting jt AND jv -> jw
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting jq OR jw -> jx
+[2025-02-22 18:38:21] DEBUG | root - Connecting jq AND jw -> jy
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT jy -> jz
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting jx AND jz -> ka
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting jp OR ka -> kb
+[2025-02-22 18:38:21] DEBUG | root - Connecting jp AND ka -> kc
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT kc -> kd
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting kb AND kd -> ke
+[2025-02-22 18:38:21] DEBUG | root - Connecting 1 AND ke -> kf
+[2025-02-22 18:38:21] DEBUG | root - Connecting kf LSHIFT 15 -> kj
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting kg OR kf -> kh
+[2025-02-22 18:38:21] DEBUG | root - Connecting ki OR kj -> kk
+[2025-02-22 18:38:21] DEBUG | root - Connecting kk RSHIFT 5 -> kn
+[2025-02-22 18:38:21] DEBUG | root - Connecting kk RSHIFT 1 -> ld
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting kh LSHIFT 1 -> lb
+[2025-02-22 18:38:21] DEBUG | root - Connecting kk RSHIFT 2 -> kl
+[2025-02-22 18:38:21] DEBUG | root - Connecting kk RSHIFT 3 -> km
+[2025-02-22 18:38:21] DEBUG | root - Connecting km OR kn -> ko
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting km AND kn -> kp
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT kp -> kq
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting ko AND kq -> kr
+[2025-02-22 18:38:21] DEBUG | root - Connecting kl AND kr -> kt
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT kt -> ku
+[2025-02-22 18:38:21] DEBUG | root - Connecting kl OR kr -> ks
+[2025-02-22 18:38:21] DEBUG | root - Connecting ks AND ku -> kv
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting kk AND kv -> kx
+[2025-02-22 18:38:21] DEBUG | root - Connecting kk OR kv -> kw
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT kx -> ky
+[2025-02-22 18:38:21] DEBUG | root - Connecting kw AND ky -> kz
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting 1 AND kz -> la
+[2025-02-22 18:38:21] DEBUG | root - Connecting la LSHIFT 15 -> le
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting ld OR le -> lf
+[2025-02-22 18:38:21] DEBUG | root - Connecting lf RSHIFT 3 -> lh
+[2025-02-22 18:38:21] DEBUG | root - Connecting lf RSHIFT 5 -> li
+[2025-02-22 18:38:21] DEBUG | root - Connecting lh AND li -> lk
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT lk -> ll
+[2025-02-22 18:38:21] DEBUG | root - Connecting lh OR li -> lj
+[2025-02-22 18:38:21] DEBUG | root - Connecting lb OR la -> lc
+[2025-02-22 18:38:21] DEBUG | root - Connecting lf RSHIFT 1 -> ly
+[2025-02-22 18:38:21] DEBUG | root - Connecting lc LSHIFT 1 -> lw
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting lf RSHIFT 2 -> lg
+[2025-02-22 18:38:21] DEBUG | root - Connecting lj AND ll -> lm
+[2025-02-22 18:38:21] DEBUG | root - Connecting lg OR lm -> ln
+[2025-02-22 18:38:21] DEBUG | root - Connecting lg AND lm -> lo
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT lo -> lp
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting ln AND lp -> lq
+[2025-02-22 18:38:21] DEBUG | root - Connecting lf OR lq -> lr
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting lf AND lq -> ls
+[2025-02-22 18:38:21] DEBUG | root - Connecting NOT ls -> lt
+[2025-02-22 18:38:21] DEBUG | root - Connecting lr AND lt -> lu
+[2025-02-22 18:38:21] DEBUG | root - Connecting 1 AND lu -> lv
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting lv LSHIFT 15 -> lz
+[2025-02-22 18:38:21] DEBUG | root - Connecting lw OR lv -> lx
+[2025-02-22 18:38:21] DEBUG | root - Some lines are still ignored. Going through instructions with updated wire_dct now.
+[2025-02-22 18:38:21] DEBUG | root - Connecting ly OR lz -> ma
+[2025-02-22 18:38:21] DEBUG | root - Connecting lx -> a
