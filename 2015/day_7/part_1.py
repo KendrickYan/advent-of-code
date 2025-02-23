@@ -116,7 +116,6 @@ def find_lines(wire_dct: dict, instruction_lines: list[str]) -> dict:
 
     ignored_lines = []
     for line in instruction_lines:
-        do_connection = False
         wire_keys = wire_dct.keys()
         words_list = line.split(' ')
 
