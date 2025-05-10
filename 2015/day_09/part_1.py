@@ -50,30 +50,128 @@ class FindShortestRoute:
     '''
 
     def __init__(self, distances_list: list[str]) -> None:
+        self.distances_data = self.parse_input(distances_list)
+        logging.debug(f'self.distances_data: {self.distances_data}')
 
-        self.distances_dct = self.parse_input(distances_list)
-        self.result = self.run()
+        self.run()
+        self.result = self.route_distance
 
-    def parse_input(self, distances_list: list[str]) -> dict[tuple[str, str], int]:
-        '''Parses the input into a dictionary.'''
-        distances_dct = {}
+    def parse_input(self, distances_list: list[str]) -> list[tuple[str, str, int]]:
+        '''Parses the input into a list of tuples.'''
+        distances_data = []
         for distance in distances_list:
             distance_line = distance.split(' ')
-            distances_dct[(distance_line[0], distance_line[2])] = distance_line[-1]
-        return distances_dct
+            distances_data.append((distance_line[0], distance_line[2], int(distance_line[-1])))
 
-    def find_shortest_between_two(self) -> int:
-        '''Returns the shortest distance between any two cities.'''
-        current_shortest = float('inf')
-        for distance in self.distances_list:
-            distance = int(distance.split(' ')[-1])
-            if distance < current_shortest:
-                current_shortest = distance
-        return current_shortest
+        # Sort the list in order of shortest distance
+        distances_data = sorted(distances_data, key=lambda x: x[2])
+        return distances_data
 
-    def run(self) -> int:
-        shortest_distance = self.find_shortest_between_two()
-        return shortest_distance
+    def start_route(self, starting_route: int) -> None:
+        '''Starts the route-finding algorithm. Takes the starting route as an index of self.distances_data'''
+
+        # Since it is the starting city
+        if self.current_city == '':
+
+            # Take the first distance as the starting cities.
+            current_route = self.distances_data[starting_route]
+            logging.debug(f'current_route: {current_route}')
+
+            distances_data_copy = self.distances_data.copy()
+
+            # Remove that route
+            distances_data_copy.remove(current_route)
+
+            # Find the next shortest distance with a common city
+            for route in distances_data_copy:
+                if len(set(current_route).intersection(route)) == 1:
+
+                    common_city = set(current_route).intersection(route)
+
+                    # The first city in the route is the one that is not the common city in the next route (actually next distance, poor naming convention here)
+                    first_city = current_route[0] if current_route[1] in common_city else current_route[1]
+                    
+                    # Add the starting cities to the order
+                    self.route_order.extend([first_city, list(common_city)[0]])
+
+                    # Set the UNCOMMON city to self.current_city
+                    self.current_city = route[0] if route[0] != common_city else route[1]
+
+                    # Add the current city to the order
+                    self.route_order.append(self.current_city)
+
+                    # Tally the distance of the entire route
+                    self.route_distance += route[2]
+
+                    logging.debug(f'intersection: {common_city}, route: {route}, self.current_city: {self.current_city}, self.route_distance: {self.route_distance}')
+
+                    # Remove that route
+                    distances_data_copy.remove(route)
+
+                    break
+
+    def go_next_city(self) -> int:
+        '''From the starting route, go to the next nearest city until all cities are visted or stuck at a dead end.
+        
+        Returns exit code. 0 for no error. 1 for reaching dead end.'''
+
+        exit_code = 0
+
+        distances_data_copy = self.distances_data.copy()
+
+        while len(distances_data_copy) > 0:
+
+            logging.debug(f'* distances_data_copy: {distances_data_copy}')
+            logging.debug(f'** self.route_order: {self.route_order}')
+            
+            for route in distances_data_copy:
+                # logging.debug(f'Checking {route} for {self.current_city}')
+
+                if self.current_city in route and len(set(self.route_order).intersection(route)) == 1:
+
+                    # logging.debug(f'intersection: {set(self.route_order).intersection(route)}')
+
+                    # Set the new self.current_city
+                    self.current_city = route[0] if route[0] != self.current_city else route[1]
+
+                    # Add the current city to the order
+                    self.route_order.append(self.current_city)
+
+                    # Tally the distance of the entire route
+                    self.route_distance += route[2]
+
+                    logging.debug(f'route: {route}, self.current_city: {self.current_city}, self.route_distance: {self.route_distance}')
+                    
+                    # Remove that route
+                    distances_data_copy.remove(route)
+
+                    break
+                
+            else:
+                logging.info(f'''Reached dead end for {self.route_order} :(
+                             Still have {distances_data_copy}''')
+                exit_code = 1
+                break # out of the for loop if route is not found
+
+        return exit_code
+
+    def run(self) -> None:
+        for i in range(len(self.distances_data)):
+            # print(f'Loop: {i}')
+
+            # Reset variables
+            self.current_city = ''
+            self.route_distance = 0
+            self.route_order = []
+            
+            self.start_route(i)
+
+            if self.go_next_city() == 0:
+                print('OMAI WA MO')
+                break
+
+        else:
+            print('\nNANI!!??')
 
 def main() -> None:
     write_logs('part_1.log')
