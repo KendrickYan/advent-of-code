@@ -1,0 +1,13 @@
+Copyright (c) Kendrick Yanuar 2025
+
+This repository is provided for educational and portfolio purposes only.
+
+You are permitted to:
+- View and reference this code for personal learning.
+- Share links to this repository for discussion or educational purposes.
+
+You are **not** permitted to:
+- Copy or submit any part of this code as your own work in Advent of Code or other coding challenges.
+- Publish modified or unmodified versions of this code elsewhere without explicit permission.
+
+No warranty is provided. All rights reserved.
