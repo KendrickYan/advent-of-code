@@ -52,12 +52,13 @@ class FindShortestRoute:
     def __init__(self, distances_list: list[str]) -> None:
         self.distances_data = self.parse_input(distances_list)
         logging.debug(f'self.distances_data: {self.distances_data}')
+        self.found_routes = []
 
         self.run()
-        self.result = self.route_distance
+        self.result = min(self.found_routes)
 
     def parse_input(self, distances_list: list[str]) -> list[tuple[str, str, int]]:
-        '''Parses the input into a list of tuples.'''
+        '''Parses the input into a list of tuples. Sort the list in order of shortest distance'''
         distances_data = []
         for distance in distances_list:
             distance_line = distance.split(' ')
@@ -75,6 +76,7 @@ class FindShortestRoute:
 
             # Take the first distance as the starting cities.
             current_route = self.distances_data[starting_route]
+            self.route_distance += current_route[2]
             logging.debug(f'current_route: {current_route}')
 
             distances_data_copy = self.distances_data.copy()
@@ -108,7 +110,7 @@ class FindShortestRoute:
                     # Remove that route
                     distances_data_copy.remove(route)
 
-                    break
+                    break # find the next route with common city
 
     def go_next_city(self) -> int:
         '''From the starting route, go to the next nearest city until all cities are visted or stuck at a dead end.
@@ -167,17 +169,15 @@ class FindShortestRoute:
             self.start_route(i)
 
             if self.go_next_city() == 0:
-                print('OMAI WA MO')
                 break
 
-        else:
-            print('\nNANI!!??')
+            self.found_routes.append(self.route_distance)
 
 def main() -> None:
     write_logs('part_1.log')
     distances_list = get_input().splitlines()
     shortest_route = FindShortestRoute(distances_list)
-    print(shortest_route.result)    
+    print(f'Answer: {shortest_route.result}')    
 
 if __name__ == '__main__':
     main()
