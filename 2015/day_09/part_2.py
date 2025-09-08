@@ -68,16 +68,15 @@ class FindLongestRoute:
         distances_data = sorted(distances_data, key=lambda x: x[2], reverse=True)
         return distances_data
 
-    def start_route(self, starting_route_index: int) -> None:
-        '''Starts the route-finding algorithm. Takes the starting route as an index of self.distances_data'''
+    def start_route(self, starting_route: tuple[str, str, int]) -> None:
+        '''Starts the route-finding algorithm. Takes the starting route'''
 
         # Since it is the starting city
         if self.current_city == '':
 
             # Take the first distance as the starting cities.
-            starting_route = self.distances_data[starting_route_index]
-            self.route_distance += starting_route[2]
             logging.debug(f'starting_route: {starting_route}')
+            self.route_distance += starting_route[2]
 
             remaining_routes = self.distances_data.copy()
 
@@ -110,16 +109,18 @@ class FindLongestRoute:
                     # Remove that route
                     remaining_routes.remove(route)
 
+                    if self.go_next_city(remaining_routes) == 0:
+                        print(f'Successful route: {self.route_order}, total distance: {self.route_distance}')
+                        self.found_routes.append(len(self.route_order))
+
                     break # find the next route with common city
 
-    def go_next_city(self) -> int:
+    def go_next_city(self, remaining_routes: list[tuple[str, str, int]]) -> int:
         '''From the starting route, go to the next nearest city until all cities are visted or stuck at a dead end.
         
         Returns exit code. 0 for no error. 1 for reaching dead end.'''
 
         exit_code = 0
-
-        remaining_routes = self.distances_data.copy()
 
         while len(remaining_routes) > 0:
 
@@ -147,10 +148,14 @@ class FindLongestRoute:
                     # Remove that route
                     remaining_routes.remove(route)
 
+                    if self.go_next_city(remaining_routes) == 0:
+                        print(f'Successful route: {self.route_order}, total distance: {self.route_distance}')
+                        self.found_routes.append(len(self.route_order))
+
                     break
                 
             else:
-                logging.info(f'Failed route: {self.route_order}')
+                logging.info(f'Failed route: {self.route_order}, num of visited cities: {len(self.route_order)}')
                 exit_code = 1
                 break # out of the for loop if route is not found
 
@@ -164,10 +169,7 @@ class FindLongestRoute:
             self.route_distance = 0
             self.route_order = []
             
-            self.start_route(i)
-
-            if self.go_next_city() == 0:
-                print(f'Successful route: {self.route_order}, total distance: {self.route_distance}')
+            rem_routes = self.start_route(self.distances_data[i])
 
 def main() -> None:
     write_logs('part_2.log')

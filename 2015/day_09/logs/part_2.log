@@ -1,417 +1,721 @@
-[2025-09-05 21:04:46] DEBUG | root - self.distances_data: [('Tambi', 'Straylight', 130), ('Snowdin', 'Straylight', 121), ('Tambi', 'Norrath', 113), ('Snowdin', 'Tristram', 111), ('AlphaCentauri', 'Arbre', 108), ('Snowdin', 'Norrath', 91), ('Tristram', 'Arbre', 90), ('Faerun', 'Arbre', 83), ('Straylight', 'Arbre', 81), ('Snowdin', 'Arbre', 71), ('AlphaCentauri', 'Snowdin', 66), ('Faerun', 'Norrath', 63), ('AlphaCentauri', 'Faerun', 60), ('Norrath', 'Arbre', 60), ('Faerun', 'Tristram', 57), ('Norrath', 'Tristram', 50), ('Tambi', 'Arbre', 40), ('Tambi', 'Faerun', 39), ('Tambi', 'Tristram', 35), ('AlphaCentauri', 'Norrath', 34), ('AlphaCentauri', 'Straylight', 34), ('AlphaCentauri', 'Tambi', 28), ('Straylight', 'Tristram', 27), ('Snowdin', 'Tambi', 22), ('Faerun', 'Straylight', 21), ('Snowdin', 'Faerun', 12), ('Norrath', 'Straylight', 9), ('AlphaCentauri', 'Tristram', 3)]
-[2025-09-05 21:04:46] DEBUG | root - starting_route: ('Tambi', 'Straylight', 130)
-[2025-09-05 21:04:46] DEBUG | root - intersection: {'Straylight'}, route: ('Snowdin', 'Straylight', 121), self.current_city: Snowdin, self.route_distance: 251
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Tambi', 'Straylight', 'Snowdin']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Tristram', 111), self.current_city: Tristram, self.route_distance: 362
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Tambi', 'Straylight', 'Snowdin', 'Tristram']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tristram', 'Arbre', 90), self.current_city: Arbre, self.route_distance: 452
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre']
-[2025-09-05 21:04:46] DEBUG | root - route: ('AlphaCentauri', 'Arbre', 108), self.current_city: AlphaCentauri, self.route_distance: 560
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri']
-[2025-09-05 21:04:46] DEBUG | root - route: ('AlphaCentauri', 'Faerun', 60), self.current_city: Faerun, self.route_distance: 620
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Faerun']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Faerun', 'Norrath', 63), self.current_city: Norrath, self.route_distance: 683
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Faerun', 'Norrath']
-[2025-09-05 21:04:46] INFO | root - Failed route: ['Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Faerun', 'Norrath']
-[2025-09-05 21:04:46] DEBUG | root - starting_route: ('Snowdin', 'Straylight', 121)
-[2025-09-05 21:04:46] DEBUG | root - intersection: {'Straylight'}, route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 251
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Snowdin', 'Straylight', 'Tambi']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Norrath', 113), self.current_city: Norrath, self.route_distance: 364
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Snowdin', 'Straylight', 'Tambi', 'Norrath']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Faerun', 'Norrath', 63), self.current_city: Faerun, self.route_distance: 427
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Faerun', 'Arbre', 83), self.current_city: Arbre, self.route_distance: 510
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre']
-[2025-09-05 21:04:46] DEBUG | root - route: ('AlphaCentauri', 'Arbre', 108), self.current_city: AlphaCentauri, self.route_distance: 618
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri']
-[2025-09-05 21:04:46] DEBUG | root - route: ('AlphaCentauri', 'Tristram', 3), self.current_city: Tristram, self.route_distance: 621
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri', 'Tristram']
-[2025-09-05 21:04:46] INFO | root - Failed route: ['Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri', 'Tristram']
-[2025-09-05 21:04:46] DEBUG | root - starting_route: ('Tambi', 'Norrath', 113)
-[2025-09-05 21:04:46] DEBUG | root - intersection: {'Tambi'}, route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 243
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Norrath', 'Tambi', 'Tambi']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Straylight, self.route_distance: 373
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Norrath', 'Tambi', 'Tambi', 'Straylight']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Straylight', 121), self.current_city: Snowdin, self.route_distance: 494
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Norrath', 'Tambi', 'Tambi', 'Straylight', 'Snowdin']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Tristram', 111), self.current_city: Tristram, self.route_distance: 605
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Norrath', 'Tambi', 'Tambi', 'Straylight', 'Snowdin', 'Tristram']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tristram', 'Arbre', 90), self.current_city: Arbre, self.route_distance: 695
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Norrath', 'Tambi', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre']
-[2025-09-05 21:04:46] DEBUG | root - route: ('AlphaCentauri', 'Arbre', 108), self.current_city: AlphaCentauri, self.route_distance: 803
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Norrath', 'Tambi', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri']
-[2025-09-05 21:04:46] DEBUG | root - route: ('AlphaCentauri', 'Faerun', 60), self.current_city: Faerun, self.route_distance: 863
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Norrath', 'Tambi', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Faerun']
-[2025-09-05 21:04:46] INFO | root - Failed route: ['Norrath', 'Tambi', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Faerun']
-[2025-09-05 21:04:46] DEBUG | root - starting_route: ('Snowdin', 'Tristram', 111)
-[2025-09-05 21:04:46] DEBUG | root - intersection: {'Snowdin'}, route: ('Snowdin', 'Straylight', 121), self.current_city: Snowdin, self.route_distance: 232
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Tristram', 'Snowdin', 'Snowdin']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Straylight', 121), self.current_city: Straylight, self.route_distance: 353
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Tristram', 'Snowdin', 'Snowdin', 'Straylight']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 483
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Tristram', 'Snowdin', 'Snowdin', 'Straylight', 'Tambi']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Norrath', 113), self.current_city: Norrath, self.route_distance: 596
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Tristram', 'Snowdin', 'Snowdin', 'Straylight', 'Tambi', 'Norrath']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Faerun', 'Norrath', 63), self.current_city: Faerun, self.route_distance: 659
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Tristram', 'Snowdin', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Faerun', 'Arbre', 83), self.current_city: Arbre, self.route_distance: 742
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Tristram', 'Snowdin', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre']
-[2025-09-05 21:04:46] DEBUG | root - route: ('AlphaCentauri', 'Arbre', 108), self.current_city: AlphaCentauri, self.route_distance: 850
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Tristram', 'Snowdin', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri']
-[2025-09-05 21:04:46] INFO | root - Failed route: ['Tristram', 'Snowdin', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri']
-[2025-09-05 21:04:46] DEBUG | root - starting_route: ('AlphaCentauri', 'Arbre', 108)
-[2025-09-05 21:04:46] DEBUG | root - intersection: {'Arbre'}, route: ('Tristram', 'Arbre', 90), self.current_city: Tristram, self.route_distance: 198
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Arbre', 'Tristram']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Tristram', 111), self.current_city: Snowdin, self.route_distance: 309
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Arbre', 'Tristram', 'Snowdin']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Straylight', 121), self.current_city: Straylight, self.route_distance: 430
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Arbre', 'Tristram', 'Snowdin', 'Straylight']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 560
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Norrath', 113), self.current_city: Norrath, self.route_distance: 673
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Faerun', 'Norrath', 63), self.current_city: Faerun, self.route_distance: 736
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun']
-[2025-09-05 21:04:46] INFO | root - Failed route: ['AlphaCentauri', 'Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun']
-[2025-09-05 21:04:46] DEBUG | root - starting_route: ('Snowdin', 'Norrath', 91)
-[2025-09-05 21:04:46] DEBUG | root - intersection: {'Snowdin'}, route: ('Snowdin', 'Straylight', 121), self.current_city: Snowdin, self.route_distance: 212
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Norrath', 'Snowdin', 'Snowdin']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Straylight', 121), self.current_city: Straylight, self.route_distance: 333
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Norrath', 'Snowdin', 'Snowdin', 'Straylight']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 463
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Norrath', 'Snowdin', 'Snowdin', 'Straylight', 'Tambi']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Arbre', 40), self.current_city: Arbre, self.route_distance: 503
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Norrath', 'Snowdin', 'Snowdin', 'Straylight', 'Tambi', 'Arbre']
-[2025-09-05 21:04:46] DEBUG | root - route: ('AlphaCentauri', 'Arbre', 108), self.current_city: AlphaCentauri, self.route_distance: 611
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Norrath', 'Snowdin', 'Snowdin', 'Straylight', 'Tambi', 'Arbre', 'AlphaCentauri']
-[2025-09-05 21:04:46] DEBUG | root - route: ('AlphaCentauri', 'Faerun', 60), self.current_city: Faerun, self.route_distance: 671
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Norrath', 'Snowdin', 'Snowdin', 'Straylight', 'Tambi', 'Arbre', 'AlphaCentauri', 'Faerun']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Faerun', 'Tristram', 57), self.current_city: Tristram, self.route_distance: 728
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Norrath', 'Snowdin', 'Snowdin', 'Straylight', 'Tambi', 'Arbre', 'AlphaCentauri', 'Faerun', 'Tristram']
-[2025-09-05 21:04:46] INFO | root - Failed route: ['Norrath', 'Snowdin', 'Snowdin', 'Straylight', 'Tambi', 'Arbre', 'AlphaCentauri', 'Faerun', 'Tristram']
-[2025-09-05 21:04:46] DEBUG | root - starting_route: ('Tristram', 'Arbre', 90)
-[2025-09-05 21:04:46] DEBUG | root - intersection: {'Tristram'}, route: ('Snowdin', 'Tristram', 111), self.current_city: Snowdin, self.route_distance: 201
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Arbre', 'Tristram', 'Snowdin']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Straylight', 121), self.current_city: Straylight, self.route_distance: 322
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Arbre', 'Tristram', 'Snowdin', 'Straylight']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 452
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Norrath', 113), self.current_city: Norrath, self.route_distance: 565
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Faerun', 'Norrath', 63), self.current_city: Faerun, self.route_distance: 628
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun']
-[2025-09-05 21:04:46] DEBUG | root - route: ('AlphaCentauri', 'Faerun', 60), self.current_city: AlphaCentauri, self.route_distance: 688
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'AlphaCentauri']
-[2025-09-05 21:04:46] INFO | root - Failed route: ['Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'AlphaCentauri']
-[2025-09-05 21:04:46] DEBUG | root - starting_route: ('Faerun', 'Arbre', 83)
-[2025-09-05 21:04:46] DEBUG | root - intersection: {'Arbre'}, route: ('AlphaCentauri', 'Arbre', 108), self.current_city: AlphaCentauri, self.route_distance: 191
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Arbre', 'AlphaCentauri']
-[2025-09-05 21:04:46] DEBUG | root - route: ('AlphaCentauri', 'Snowdin', 66), self.current_city: Snowdin, self.route_distance: 257
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Arbre', 'AlphaCentauri', 'Snowdin']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Straylight', 121), self.current_city: Straylight, self.route_distance: 378
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 508
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tambi']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Norrath', 113), self.current_city: Norrath, self.route_distance: 621
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tambi', 'Norrath']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Norrath', 'Tristram', 50), self.current_city: Tristram, self.route_distance: 671
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Tristram']
-[2025-09-05 21:04:46] INFO | root - Failed route: ['Faerun', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Tristram']
-[2025-09-05 21:04:46] DEBUG | root - starting_route: ('Straylight', 'Arbre', 81)
-[2025-09-05 21:04:46] DEBUG | root - intersection: {'Straylight'}, route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 211
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Arbre', 'Straylight', 'Tambi']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Norrath', 113), self.current_city: Norrath, self.route_distance: 324
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Arbre', 'Straylight', 'Tambi', 'Norrath']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Norrath', 91), self.current_city: Snowdin, self.route_distance: 415
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Arbre', 'Straylight', 'Tambi', 'Norrath', 'Snowdin']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Tristram', 111), self.current_city: Tristram, self.route_distance: 526
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Arbre', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Faerun', 'Tristram', 57), self.current_city: Faerun, self.route_distance: 583
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Arbre', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Faerun']
-[2025-09-05 21:04:46] DEBUG | root - route: ('AlphaCentauri', 'Faerun', 60), self.current_city: AlphaCentauri, self.route_distance: 643
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Arbre', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Faerun', 'AlphaCentauri']
-[2025-09-05 21:04:46] INFO | root - Failed route: ['Arbre', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Faerun', 'AlphaCentauri']
-[2025-09-05 21:04:46] DEBUG | root - starting_route: ('Snowdin', 'Arbre', 71)
-[2025-09-05 21:04:46] DEBUG | root - intersection: {'Snowdin'}, route: ('Snowdin', 'Straylight', 121), self.current_city: Snowdin, self.route_distance: 192
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Arbre', 'Snowdin', 'Snowdin']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Straylight', 121), self.current_city: Straylight, self.route_distance: 313
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Arbre', 'Snowdin', 'Snowdin', 'Straylight']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 443
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Arbre', 'Snowdin', 'Snowdin', 'Straylight', 'Tambi']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Norrath', 113), self.current_city: Norrath, self.route_distance: 556
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Arbre', 'Snowdin', 'Snowdin', 'Straylight', 'Tambi', 'Norrath']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Faerun', 'Norrath', 63), self.current_city: Faerun, self.route_distance: 619
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Arbre', 'Snowdin', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun']
-[2025-09-05 21:04:46] DEBUG | root - route: ('AlphaCentauri', 'Faerun', 60), self.current_city: AlphaCentauri, self.route_distance: 679
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Arbre', 'Snowdin', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'AlphaCentauri']
-[2025-09-05 21:04:46] DEBUG | root - route: ('AlphaCentauri', 'Tristram', 3), self.current_city: Tristram, self.route_distance: 682
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Arbre', 'Snowdin', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'AlphaCentauri', 'Tristram']
-[2025-09-05 21:04:46] INFO | root - Failed route: ['Arbre', 'Snowdin', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'AlphaCentauri', 'Tristram']
-[2025-09-05 21:04:46] DEBUG | root - starting_route: ('AlphaCentauri', 'Snowdin', 66)
-[2025-09-05 21:04:46] DEBUG | root - intersection: {'Snowdin'}, route: ('Snowdin', 'Straylight', 121), self.current_city: Snowdin, self.route_distance: 187
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Snowdin', 'Snowdin']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Straylight', 121), self.current_city: Straylight, self.route_distance: 308
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Snowdin', 'Snowdin', 'Straylight']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 438
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Snowdin', 'Snowdin', 'Straylight', 'Tambi']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Norrath', 113), self.current_city: Norrath, self.route_distance: 551
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Snowdin', 'Snowdin', 'Straylight', 'Tambi', 'Norrath']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Faerun', 'Norrath', 63), self.current_city: Faerun, self.route_distance: 614
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Snowdin', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Faerun', 'Arbre', 83), self.current_city: Arbre, self.route_distance: 697
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Snowdin', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tristram', 'Arbre', 90), self.current_city: Tristram, self.route_distance: 787
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Snowdin', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'Tristram']
-[2025-09-05 21:04:46] INFO | root - Failed route: ['AlphaCentauri', 'Snowdin', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'Tristram']
-[2025-09-05 21:04:46] DEBUG | root - starting_route: ('Faerun', 'Norrath', 63)
-[2025-09-05 21:04:46] DEBUG | root - intersection: {'Norrath'}, route: ('Tambi', 'Norrath', 113), self.current_city: Tambi, self.route_distance: 176
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Norrath', 'Tambi']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Straylight, self.route_distance: 306
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Norrath', 'Tambi', 'Straylight']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Straylight', 121), self.current_city: Snowdin, self.route_distance: 427
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Norrath', 'Tambi', 'Straylight', 'Snowdin']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Tristram', 111), self.current_city: Tristram, self.route_distance: 538
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tristram', 'Arbre', 90), self.current_city: Arbre, self.route_distance: 628
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre']
-[2025-09-05 21:04:46] DEBUG | root - route: ('AlphaCentauri', 'Arbre', 108), self.current_city: AlphaCentauri, self.route_distance: 736
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri']
-[2025-09-05 21:04:46] INFO | root - Failed route: ['Faerun', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri']
-[2025-09-05 21:04:46] DEBUG | root - starting_route: ('AlphaCentauri', 'Faerun', 60)
-[2025-09-05 21:04:46] DEBUG | root - intersection: {'AlphaCentauri'}, route: ('AlphaCentauri', 'Arbre', 108), self.current_city: AlphaCentauri, self.route_distance: 168
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'AlphaCentauri', 'AlphaCentauri']
-[2025-09-05 21:04:46] DEBUG | root - route: ('AlphaCentauri', 'Arbre', 108), self.current_city: Arbre, self.route_distance: 276
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'AlphaCentauri', 'AlphaCentauri', 'Arbre']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tristram', 'Arbre', 90), self.current_city: Tristram, self.route_distance: 366
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'AlphaCentauri', 'AlphaCentauri', 'Arbre', 'Tristram']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Tristram', 111), self.current_city: Snowdin, self.route_distance: 477
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'AlphaCentauri', 'AlphaCentauri', 'Arbre', 'Tristram', 'Snowdin']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Straylight', 121), self.current_city: Straylight, self.route_distance: 598
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'AlphaCentauri', 'AlphaCentauri', 'Arbre', 'Tristram', 'Snowdin', 'Straylight']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 728
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'AlphaCentauri', 'AlphaCentauri', 'Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Norrath', 113), self.current_city: Norrath, self.route_distance: 841
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'AlphaCentauri', 'AlphaCentauri', 'Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath']
-[2025-09-05 21:04:46] INFO | root - Failed route: ['Faerun', 'AlphaCentauri', 'AlphaCentauri', 'Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath']
-[2025-09-05 21:04:46] DEBUG | root - starting_route: ('Norrath', 'Arbre', 60)
-[2025-09-05 21:04:46] DEBUG | root - intersection: {'Norrath'}, route: ('Tambi', 'Norrath', 113), self.current_city: Tambi, self.route_distance: 173
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Arbre', 'Norrath', 'Tambi']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Straylight, self.route_distance: 303
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Arbre', 'Norrath', 'Tambi', 'Straylight']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Straylight', 121), self.current_city: Snowdin, self.route_distance: 424
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Arbre', 'Norrath', 'Tambi', 'Straylight', 'Snowdin']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Tristram', 111), self.current_city: Tristram, self.route_distance: 535
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Arbre', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Faerun', 'Tristram', 57), self.current_city: Faerun, self.route_distance: 592
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Arbre', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Faerun']
-[2025-09-05 21:04:46] DEBUG | root - route: ('AlphaCentauri', 'Faerun', 60), self.current_city: AlphaCentauri, self.route_distance: 652
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Arbre', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Faerun', 'AlphaCentauri']
-[2025-09-05 21:04:46] INFO | root - Failed route: ['Arbre', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Faerun', 'AlphaCentauri']
-[2025-09-05 21:04:46] DEBUG | root - starting_route: ('Faerun', 'Tristram', 57)
-[2025-09-05 21:04:46] DEBUG | root - intersection: {'Tristram'}, route: ('Snowdin', 'Tristram', 111), self.current_city: Snowdin, self.route_distance: 168
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Tristram', 'Snowdin']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Straylight', 121), self.current_city: Straylight, self.route_distance: 289
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Tristram', 'Snowdin', 'Straylight']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 419
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Tristram', 'Snowdin', 'Straylight', 'Tambi']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Norrath', 113), self.current_city: Norrath, self.route_distance: 532
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Norrath', 'Arbre', 60), self.current_city: Arbre, self.route_distance: 592
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Arbre']
-[2025-09-05 21:04:46] DEBUG | root - route: ('AlphaCentauri', 'Arbre', 108), self.current_city: AlphaCentauri, self.route_distance: 700
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Arbre', 'AlphaCentauri']
-[2025-09-05 21:04:46] INFO | root - Failed route: ['Faerun', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Arbre', 'AlphaCentauri']
-[2025-09-05 21:04:46] DEBUG | root - starting_route: ('Norrath', 'Tristram', 50)
-[2025-09-05 21:04:46] DEBUG | root - intersection: {'Norrath'}, route: ('Tambi', 'Norrath', 113), self.current_city: Tambi, self.route_distance: 163
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Tristram', 'Norrath', 'Tambi']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Straylight, self.route_distance: 293
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Tristram', 'Norrath', 'Tambi', 'Straylight']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Straylight', 121), self.current_city: Snowdin, self.route_distance: 414
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Tristram', 'Norrath', 'Tambi', 'Straylight', 'Snowdin']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Arbre', 71), self.current_city: Arbre, self.route_distance: 485
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Tristram', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Arbre']
-[2025-09-05 21:04:46] DEBUG | root - route: ('AlphaCentauri', 'Arbre', 108), self.current_city: AlphaCentauri, self.route_distance: 593
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Tristram', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Arbre', 'AlphaCentauri']
-[2025-09-05 21:04:46] DEBUG | root - route: ('AlphaCentauri', 'Faerun', 60), self.current_city: Faerun, self.route_distance: 653
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Tristram', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Arbre', 'AlphaCentauri', 'Faerun']
-[2025-09-05 21:04:46] INFO | root - Failed route: ['Tristram', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Arbre', 'AlphaCentauri', 'Faerun']
-[2025-09-05 21:04:46] DEBUG | root - starting_route: ('Tambi', 'Arbre', 40)
-[2025-09-05 21:04:46] DEBUG | root - intersection: {'Tambi'}, route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 170
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Arbre', 'Tambi', 'Tambi']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Straylight, self.route_distance: 300
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Arbre', 'Tambi', 'Tambi', 'Straylight']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Straylight', 121), self.current_city: Snowdin, self.route_distance: 421
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Arbre', 'Tambi', 'Tambi', 'Straylight', 'Snowdin']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Tristram', 111), self.current_city: Tristram, self.route_distance: 532
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Arbre', 'Tambi', 'Tambi', 'Straylight', 'Snowdin', 'Tristram']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Faerun', 'Tristram', 57), self.current_city: Faerun, self.route_distance: 589
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Arbre', 'Tambi', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Faerun']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Faerun', 'Norrath', 63), self.current_city: Norrath, self.route_distance: 652
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Arbre', 'Tambi', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Faerun', 'Norrath']
-[2025-09-05 21:04:46] DEBUG | root - route: ('AlphaCentauri', 'Norrath', 34), self.current_city: AlphaCentauri, self.route_distance: 686
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Arbre', 'Tambi', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Faerun', 'Norrath', 'AlphaCentauri']
-[2025-09-05 21:04:46] INFO | root - Failed route: ['Arbre', 'Tambi', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Faerun', 'Norrath', 'AlphaCentauri']
-[2025-09-05 21:04:46] DEBUG | root - starting_route: ('Tambi', 'Faerun', 39)
-[2025-09-05 21:04:46] DEBUG | root - intersection: {'Tambi'}, route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 169
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Tambi', 'Tambi']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Straylight, self.route_distance: 299
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Tambi', 'Tambi', 'Straylight']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Straylight', 121), self.current_city: Snowdin, self.route_distance: 420
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Tambi', 'Tambi', 'Straylight', 'Snowdin']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Tristram', 111), self.current_city: Tristram, self.route_distance: 531
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Tambi', 'Tambi', 'Straylight', 'Snowdin', 'Tristram']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tristram', 'Arbre', 90), self.current_city: Arbre, self.route_distance: 621
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Tambi', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre']
-[2025-09-05 21:04:46] DEBUG | root - route: ('AlphaCentauri', 'Arbre', 108), self.current_city: AlphaCentauri, self.route_distance: 729
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Tambi', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri']
-[2025-09-05 21:04:46] DEBUG | root - route: ('AlphaCentauri', 'Norrath', 34), self.current_city: Norrath, self.route_distance: 763
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Tambi', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Norrath']
-[2025-09-05 21:04:46] INFO | root - Failed route: ['Faerun', 'Tambi', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Norrath']
-[2025-09-05 21:04:46] DEBUG | root - starting_route: ('Tambi', 'Tristram', 35)
-[2025-09-05 21:04:46] DEBUG | root - intersection: {'Tambi'}, route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 165
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Tristram', 'Tambi', 'Tambi']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Straylight, self.route_distance: 295
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Tristram', 'Tambi', 'Tambi', 'Straylight']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Straylight', 121), self.current_city: Snowdin, self.route_distance: 416
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Tristram', 'Tambi', 'Tambi', 'Straylight', 'Snowdin']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Norrath', 91), self.current_city: Norrath, self.route_distance: 507
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Tristram', 'Tambi', 'Tambi', 'Straylight', 'Snowdin', 'Norrath']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Faerun', 'Norrath', 63), self.current_city: Faerun, self.route_distance: 570
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Tristram', 'Tambi', 'Tambi', 'Straylight', 'Snowdin', 'Norrath', 'Faerun']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Faerun', 'Arbre', 83), self.current_city: Arbre, self.route_distance: 653
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Tristram', 'Tambi', 'Tambi', 'Straylight', 'Snowdin', 'Norrath', 'Faerun', 'Arbre']
-[2025-09-05 21:04:46] DEBUG | root - route: ('AlphaCentauri', 'Arbre', 108), self.current_city: AlphaCentauri, self.route_distance: 761
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Tristram', 'Tambi', 'Tambi', 'Straylight', 'Snowdin', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri']
-[2025-09-05 21:04:46] INFO | root - Failed route: ['Tristram', 'Tambi', 'Tambi', 'Straylight', 'Snowdin', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri']
-[2025-09-05 21:04:46] DEBUG | root - starting_route: ('AlphaCentauri', 'Norrath', 34)
-[2025-09-05 21:04:46] DEBUG | root - intersection: {'Norrath'}, route: ('Tambi', 'Norrath', 113), self.current_city: Tambi, self.route_distance: 147
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Norrath', 'Tambi']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Straylight, self.route_distance: 277
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Norrath', 'Tambi', 'Straylight']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Straylight', 121), self.current_city: Snowdin, self.route_distance: 398
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Norrath', 'Tambi', 'Straylight', 'Snowdin']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Tristram', 111), self.current_city: Tristram, self.route_distance: 509
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tristram', 'Arbre', 90), self.current_city: Arbre, self.route_distance: 599
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Faerun', 'Arbre', 83), self.current_city: Faerun, self.route_distance: 682
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'Faerun']
-[2025-09-05 21:04:46] INFO | root - Failed route: ['AlphaCentauri', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'Faerun']
-[2025-09-05 21:04:46] DEBUG | root - starting_route: ('AlphaCentauri', 'Straylight', 34)
-[2025-09-05 21:04:46] DEBUG | root - intersection: {'Straylight'}, route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 164
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Straylight', 'Tambi']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Norrath', 113), self.current_city: Norrath, self.route_distance: 277
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Straylight', 'Tambi', 'Norrath']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Norrath', 91), self.current_city: Snowdin, self.route_distance: 368
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Straylight', 'Tambi', 'Norrath', 'Snowdin']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Tristram', 111), self.current_city: Tristram, self.route_distance: 479
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tristram', 'Arbre', 90), self.current_city: Arbre, self.route_distance: 569
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Arbre']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Faerun', 'Arbre', 83), self.current_city: Faerun, self.route_distance: 652
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Arbre', 'Faerun']
-[2025-09-05 21:04:46] INFO | root - Failed route: ['AlphaCentauri', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Arbre', 'Faerun']
-[2025-09-05 21:04:46] DEBUG | root - starting_route: ('AlphaCentauri', 'Tambi', 28)
-[2025-09-05 21:04:46] DEBUG | root - intersection: {'Tambi'}, route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 158
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tambi', 'Tambi']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Straylight, self.route_distance: 288
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tambi', 'Tambi', 'Straylight']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Straylight', 121), self.current_city: Snowdin, self.route_distance: 409
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tambi', 'Tambi', 'Straylight', 'Snowdin']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Tristram', 111), self.current_city: Tristram, self.route_distance: 520
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tambi', 'Tambi', 'Straylight', 'Snowdin', 'Tristram']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tristram', 'Arbre', 90), self.current_city: Arbre, self.route_distance: 610
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tambi', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Faerun', 'Arbre', 83), self.current_city: Faerun, self.route_distance: 693
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tambi', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'Faerun']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Faerun', 'Norrath', 63), self.current_city: Norrath, self.route_distance: 756
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tambi', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'Faerun', 'Norrath']
-[2025-09-05 21:04:46] INFO | root - Failed route: ['AlphaCentauri', 'Tambi', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'Faerun', 'Norrath']
-[2025-09-05 21:04:46] DEBUG | root - starting_route: ('Straylight', 'Tristram', 27)
-[2025-09-05 21:04:46] DEBUG | root - intersection: {'Straylight'}, route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 157
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Tristram', 'Straylight', 'Tambi']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Norrath', 113), self.current_city: Norrath, self.route_distance: 270
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Tristram', 'Straylight', 'Tambi', 'Norrath']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Norrath', 91), self.current_city: Snowdin, self.route_distance: 361
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Tristram', 'Straylight', 'Tambi', 'Norrath', 'Snowdin']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Arbre', 71), self.current_city: Arbre, self.route_distance: 432
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Tristram', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Arbre']
-[2025-09-05 21:04:46] DEBUG | root - route: ('AlphaCentauri', 'Arbre', 108), self.current_city: AlphaCentauri, self.route_distance: 540
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Tristram', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Arbre', 'AlphaCentauri']
-[2025-09-05 21:04:46] DEBUG | root - route: ('AlphaCentauri', 'Faerun', 60), self.current_city: Faerun, self.route_distance: 600
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Tristram', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Arbre', 'AlphaCentauri', 'Faerun']
-[2025-09-05 21:04:46] INFO | root - Failed route: ['Tristram', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Arbre', 'AlphaCentauri', 'Faerun']
-[2025-09-05 21:04:46] DEBUG | root - starting_route: ('Snowdin', 'Tambi', 22)
-[2025-09-05 21:04:46] DEBUG | root - intersection: {'Tambi'}, route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 152
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Snowdin', 'Tambi', 'Tambi']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Straylight, self.route_distance: 282
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Snowdin', 'Tambi', 'Tambi', 'Straylight']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Straylight', 'Arbre', 81), self.current_city: Arbre, self.route_distance: 363
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Snowdin', 'Tambi', 'Tambi', 'Straylight', 'Arbre']
-[2025-09-05 21:04:46] DEBUG | root - route: ('AlphaCentauri', 'Arbre', 108), self.current_city: AlphaCentauri, self.route_distance: 471
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Snowdin', 'Tambi', 'Tambi', 'Straylight', 'Arbre', 'AlphaCentauri']
-[2025-09-05 21:04:46] DEBUG | root - route: ('AlphaCentauri', 'Faerun', 60), self.current_city: Faerun, self.route_distance: 531
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Snowdin', 'Tambi', 'Tambi', 'Straylight', 'Arbre', 'AlphaCentauri', 'Faerun']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Faerun', 'Norrath', 63), self.current_city: Norrath, self.route_distance: 594
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Snowdin', 'Tambi', 'Tambi', 'Straylight', 'Arbre', 'AlphaCentauri', 'Faerun', 'Norrath']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Norrath', 'Tristram', 50), self.current_city: Tristram, self.route_distance: 644
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Snowdin', 'Tambi', 'Tambi', 'Straylight', 'Arbre', 'AlphaCentauri', 'Faerun', 'Norrath', 'Tristram']
-[2025-09-05 21:04:46] INFO | root - Failed route: ['Snowdin', 'Tambi', 'Tambi', 'Straylight', 'Arbre', 'AlphaCentauri', 'Faerun', 'Norrath', 'Tristram']
-[2025-09-05 21:04:46] DEBUG | root - starting_route: ('Faerun', 'Straylight', 21)
-[2025-09-05 21:04:46] DEBUG | root - intersection: {'Straylight'}, route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 151
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Straylight', 'Tambi']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Norrath', 113), self.current_city: Norrath, self.route_distance: 264
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Straylight', 'Tambi', 'Norrath']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Norrath', 91), self.current_city: Snowdin, self.route_distance: 355
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Straylight', 'Tambi', 'Norrath', 'Snowdin']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Tristram', 111), self.current_city: Tristram, self.route_distance: 466
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tristram', 'Arbre', 90), self.current_city: Arbre, self.route_distance: 556
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Arbre']
-[2025-09-05 21:04:46] DEBUG | root - route: ('AlphaCentauri', 'Arbre', 108), self.current_city: AlphaCentauri, self.route_distance: 664
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri']
-[2025-09-05 21:04:46] INFO | root - Failed route: ['Faerun', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri']
-[2025-09-05 21:04:46] DEBUG | root - starting_route: ('Snowdin', 'Faerun', 12)
-[2025-09-05 21:04:46] DEBUG | root - intersection: {'Snowdin'}, route: ('Snowdin', 'Straylight', 121), self.current_city: Snowdin, self.route_distance: 133
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Snowdin', 'Snowdin']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Straylight', 121), self.current_city: Straylight, self.route_distance: 254
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Snowdin', 'Snowdin', 'Straylight']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 384
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Snowdin', 'Snowdin', 'Straylight', 'Tambi']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Norrath', 113), self.current_city: Norrath, self.route_distance: 497
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Snowdin', 'Snowdin', 'Straylight', 'Tambi', 'Norrath']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Norrath', 'Arbre', 60), self.current_city: Arbre, self.route_distance: 557
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Snowdin', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Arbre']
-[2025-09-05 21:04:46] DEBUG | root - route: ('AlphaCentauri', 'Arbre', 108), self.current_city: AlphaCentauri, self.route_distance: 665
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Snowdin', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Arbre', 'AlphaCentauri']
-[2025-09-05 21:04:46] DEBUG | root - route: ('AlphaCentauri', 'Tristram', 3), self.current_city: Tristram, self.route_distance: 668
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Faerun', 'Snowdin', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Arbre', 'AlphaCentauri', 'Tristram']
-[2025-09-05 21:04:46] INFO | root - Failed route: ['Faerun', 'Snowdin', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Arbre', 'AlphaCentauri', 'Tristram']
-[2025-09-05 21:04:46] DEBUG | root - starting_route: ('Norrath', 'Straylight', 9)
-[2025-09-05 21:04:46] DEBUG | root - intersection: {'Straylight'}, route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 139
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Norrath', 'Straylight', 'Tambi']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Arbre', 40), self.current_city: Arbre, self.route_distance: 179
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Norrath', 'Straylight', 'Tambi', 'Arbre']
-[2025-09-05 21:04:46] DEBUG | root - route: ('AlphaCentauri', 'Arbre', 108), self.current_city: AlphaCentauri, self.route_distance: 287
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Norrath', 'Straylight', 'Tambi', 'Arbre', 'AlphaCentauri']
-[2025-09-05 21:04:46] DEBUG | root - route: ('AlphaCentauri', 'Snowdin', 66), self.current_city: Snowdin, self.route_distance: 353
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Norrath', 'Straylight', 'Tambi', 'Arbre', 'AlphaCentauri', 'Snowdin']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Tristram', 111), self.current_city: Tristram, self.route_distance: 464
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Norrath', 'Straylight', 'Tambi', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Tristram']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Faerun', 'Tristram', 57), self.current_city: Faerun, self.route_distance: 521
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['Norrath', 'Straylight', 'Tambi', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Tristram', 'Faerun']
-[2025-09-05 21:04:46] INFO | root - Failed route: ['Norrath', 'Straylight', 'Tambi', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Tristram', 'Faerun']
-[2025-09-05 21:04:46] DEBUG | root - starting_route: ('AlphaCentauri', 'Tristram', 3)
-[2025-09-05 21:04:46] DEBUG | root - intersection: {'Tristram'}, route: ('Snowdin', 'Tristram', 111), self.current_city: Snowdin, self.route_distance: 114
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tristram', 'Snowdin']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Snowdin', 'Straylight', 121), self.current_city: Straylight, self.route_distance: 235
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tristram', 'Snowdin', 'Straylight']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 365
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tristram', 'Snowdin', 'Straylight', 'Tambi']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Tambi', 'Norrath', 113), self.current_city: Norrath, self.route_distance: 478
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Faerun', 'Norrath', 63), self.current_city: Faerun, self.route_distance: 541
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun']
-[2025-09-05 21:04:46] DEBUG | root - route: ('Faerun', 'Arbre', 83), self.current_city: Arbre, self.route_distance: 624
-[2025-09-05 21:04:46] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre']
-[2025-09-05 21:04:46] INFO | root - Failed route: ['AlphaCentauri', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre']
+[2025-09-09 07:37:42] DEBUG | root - self.distances_data: [('Tambi', 'Straylight', 130), ('Snowdin', 'Straylight', 121), ('Tambi', 'Norrath', 113), ('Snowdin', 'Tristram', 111), ('AlphaCentauri', 'Arbre', 108), ('Snowdin', 'Norrath', 91), ('Tristram', 'Arbre', 90), ('Faerun', 'Arbre', 83), ('Straylight', 'Arbre', 81), ('Snowdin', 'Arbre', 71), ('AlphaCentauri', 'Snowdin', 66), ('Faerun', 'Norrath', 63), ('AlphaCentauri', 'Faerun', 60), ('Norrath', 'Arbre', 60), ('Faerun', 'Tristram', 57), ('Norrath', 'Tristram', 50), ('Tambi', 'Arbre', 40), ('Tambi', 'Faerun', 39), ('Tambi', 'Tristram', 35), ('AlphaCentauri', 'Norrath', 34), ('AlphaCentauri', 'Straylight', 34), ('AlphaCentauri', 'Tambi', 28), ('Straylight', 'Tristram', 27), ('Snowdin', 'Tambi', 22), ('Faerun', 'Straylight', 21), ('Snowdin', 'Faerun', 12), ('Norrath', 'Straylight', 9), ('AlphaCentauri', 'Tristram', 3)]
+[2025-09-09 07:37:42] DEBUG | root - starting_route: ('Tambi', 'Straylight', 130)
+[2025-09-09 07:37:42] DEBUG | root - intersection: {'Straylight'}, route: ('Snowdin', 'Straylight', 121), self.current_city: Snowdin, self.route_distance: 251
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tambi', 'Straylight', 'Snowdin']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Tristram', 111), self.current_city: Tristram, self.route_distance: 362
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tambi', 'Straylight', 'Snowdin', 'Tristram']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tristram', 'Arbre', 90), self.current_city: Arbre, self.route_distance: 452
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre']
+[2025-09-09 07:37:42] DEBUG | root - route: ('AlphaCentauri', 'Arbre', 108), self.current_city: AlphaCentauri, self.route_distance: 560
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri']
+[2025-09-09 07:37:42] DEBUG | root - route: ('AlphaCentauri', 'Faerun', 60), self.current_city: Faerun, self.route_distance: 620
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Faerun']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Faerun', 'Norrath', 63), self.current_city: Norrath, self.route_distance: 683
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Faerun', 'Norrath']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Faerun', 'Norrath'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Faerun', 'Norrath']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Faerun', 'Norrath'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Faerun', 'Norrath']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Faerun', 'Norrath'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Faerun', 'Norrath']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Faerun', 'Norrath'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Faerun', 'Norrath']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Faerun', 'Norrath'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Faerun', 'Norrath']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Faerun', 'Norrath'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - starting_route: ('Snowdin', 'Straylight', 121)
+[2025-09-09 07:37:42] DEBUG | root - intersection: {'Straylight'}, route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 251
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Snowdin', 'Straylight', 'Tambi']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Norrath', 113), self.current_city: Norrath, self.route_distance: 364
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Snowdin', 'Straylight', 'Tambi', 'Norrath']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Faerun', 'Norrath', 63), self.current_city: Faerun, self.route_distance: 427
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Faerun', 'Arbre', 83), self.current_city: Arbre, self.route_distance: 510
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre']
+[2025-09-09 07:37:42] DEBUG | root - route: ('AlphaCentauri', 'Arbre', 108), self.current_city: AlphaCentauri, self.route_distance: 618
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri']
+[2025-09-09 07:37:42] DEBUG | root - route: ('AlphaCentauri', 'Tristram', 3), self.current_city: Tristram, self.route_distance: 621
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri', 'Tristram'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri', 'Tristram'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri', 'Tristram'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri', 'Tristram'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri', 'Tristram'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri', 'Tristram'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - starting_route: ('Tambi', 'Norrath', 113)
+[2025-09-09 07:37:42] DEBUG | root - intersection: {'Tambi'}, route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 243
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Tambi', 'Tambi']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Arbre', 40), self.current_city: Arbre, self.route_distance: 283
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Tambi', 'Tambi', 'Arbre']
+[2025-09-09 07:37:42] DEBUG | root - route: ('AlphaCentauri', 'Arbre', 108), self.current_city: AlphaCentauri, self.route_distance: 391
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Tambi', 'Tambi', 'Arbre', 'AlphaCentauri']
+[2025-09-09 07:37:42] DEBUG | root - route: ('AlphaCentauri', 'Snowdin', 66), self.current_city: Snowdin, self.route_distance: 457
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Tambi', 'Tambi', 'Arbre', 'AlphaCentauri', 'Snowdin']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Straylight', 121), self.current_city: Straylight, self.route_distance: 578
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Tambi', 'Tambi', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Straylight', 'Tristram', 27), self.current_city: Tristram, self.route_distance: 605
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Tambi', 'Tambi', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tristram']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Faerun', 'Tristram', 57), self.current_city: Faerun, self.route_distance: 662
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Tambi', 'Tambi', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tristram', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Norrath', 'Tambi', 'Tambi', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tristram', 'Faerun'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Tambi', 'Tambi', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tristram', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Norrath', 'Tambi', 'Tambi', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tristram', 'Faerun'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Tambi', 'Tambi', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tristram', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Norrath', 'Tambi', 'Tambi', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tristram', 'Faerun'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Tambi', 'Tambi', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tristram', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Norrath', 'Tambi', 'Tambi', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tristram', 'Faerun'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Tambi', 'Tambi', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tristram', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Norrath', 'Tambi', 'Tambi', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tristram', 'Faerun'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Tambi', 'Tambi', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tristram', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Norrath', 'Tambi', 'Tambi', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tristram', 'Faerun'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Tambi', 'Tambi', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tristram', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Norrath', 'Tambi', 'Tambi', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tristram', 'Faerun'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - starting_route: ('Snowdin', 'Tristram', 111)
+[2025-09-09 07:37:42] DEBUG | root - intersection: {'Snowdin'}, route: ('Snowdin', 'Straylight', 121), self.current_city: Snowdin, self.route_distance: 232
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Snowdin', 'Snowdin']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Norrath', 91), self.current_city: Norrath, self.route_distance: 323
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Snowdin', 'Snowdin', 'Norrath']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Norrath', 113), self.current_city: Tambi, self.route_distance: 436
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Snowdin', 'Snowdin', 'Norrath', 'Tambi']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Straylight, self.route_distance: 566
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Snowdin', 'Snowdin', 'Norrath', 'Tambi', 'Straylight']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Straylight', 'Arbre', 81), self.current_city: Arbre, self.route_distance: 647
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Snowdin', 'Snowdin', 'Norrath', 'Tambi', 'Straylight', 'Arbre']
+[2025-09-09 07:37:42] DEBUG | root - route: ('AlphaCentauri', 'Arbre', 108), self.current_city: AlphaCentauri, self.route_distance: 755
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Snowdin', 'Snowdin', 'Norrath', 'Tambi', 'Straylight', 'Arbre', 'AlphaCentauri']
+[2025-09-09 07:37:42] DEBUG | root - route: ('AlphaCentauri', 'Faerun', 60), self.current_city: Faerun, self.route_distance: 815
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Snowdin', 'Snowdin', 'Norrath', 'Tambi', 'Straylight', 'Arbre', 'AlphaCentauri', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Tristram', 'Snowdin', 'Snowdin', 'Norrath', 'Tambi', 'Straylight', 'Arbre', 'AlphaCentauri', 'Faerun'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Snowdin', 'Snowdin', 'Norrath', 'Tambi', 'Straylight', 'Arbre', 'AlphaCentauri', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Tristram', 'Snowdin', 'Snowdin', 'Norrath', 'Tambi', 'Straylight', 'Arbre', 'AlphaCentauri', 'Faerun'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Snowdin', 'Snowdin', 'Norrath', 'Tambi', 'Straylight', 'Arbre', 'AlphaCentauri', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Tristram', 'Snowdin', 'Snowdin', 'Norrath', 'Tambi', 'Straylight', 'Arbre', 'AlphaCentauri', 'Faerun'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Snowdin', 'Snowdin', 'Norrath', 'Tambi', 'Straylight', 'Arbre', 'AlphaCentauri', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Tristram', 'Snowdin', 'Snowdin', 'Norrath', 'Tambi', 'Straylight', 'Arbre', 'AlphaCentauri', 'Faerun'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Snowdin', 'Snowdin', 'Norrath', 'Tambi', 'Straylight', 'Arbre', 'AlphaCentauri', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Tristram', 'Snowdin', 'Snowdin', 'Norrath', 'Tambi', 'Straylight', 'Arbre', 'AlphaCentauri', 'Faerun'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Snowdin', 'Snowdin', 'Norrath', 'Tambi', 'Straylight', 'Arbre', 'AlphaCentauri', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Tristram', 'Snowdin', 'Snowdin', 'Norrath', 'Tambi', 'Straylight', 'Arbre', 'AlphaCentauri', 'Faerun'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Snowdin', 'Snowdin', 'Norrath', 'Tambi', 'Straylight', 'Arbre', 'AlphaCentauri', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Tristram', 'Snowdin', 'Snowdin', 'Norrath', 'Tambi', 'Straylight', 'Arbre', 'AlphaCentauri', 'Faerun'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - starting_route: ('AlphaCentauri', 'Arbre', 108)
+[2025-09-09 07:37:42] DEBUG | root - intersection: {'Arbre'}, route: ('Tristram', 'Arbre', 90), self.current_city: Tristram, self.route_distance: 198
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Arbre', 'Tristram']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Tristram', 111), self.current_city: Snowdin, self.route_distance: 309
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Arbre', 'Tristram', 'Snowdin']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Straylight', 121), self.current_city: Straylight, self.route_distance: 430
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Arbre', 'Tristram', 'Snowdin', 'Straylight']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 560
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Norrath', 113), self.current_city: Norrath, self.route_distance: 673
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Faerun', 'Norrath', 63), self.current_city: Faerun, self.route_distance: 736
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - starting_route: ('Snowdin', 'Norrath', 91)
+[2025-09-09 07:37:42] DEBUG | root - intersection: {'Snowdin'}, route: ('Snowdin', 'Straylight', 121), self.current_city: Snowdin, self.route_distance: 212
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Snowdin', 'Snowdin']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Tristram', 111), self.current_city: Tristram, self.route_distance: 323
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Snowdin', 'Snowdin', 'Tristram']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tristram', 'Arbre', 90), self.current_city: Arbre, self.route_distance: 413
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre']
+[2025-09-09 07:37:42] DEBUG | root - route: ('AlphaCentauri', 'Arbre', 108), self.current_city: AlphaCentauri, self.route_distance: 521
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri']
+[2025-09-09 07:37:42] DEBUG | root - route: ('AlphaCentauri', 'Faerun', 60), self.current_city: Faerun, self.route_distance: 581
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Faerun']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Faerun', 39), self.current_city: Tambi, self.route_distance: 620
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Faerun', 'Tambi']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Straylight, self.route_distance: 750
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Faerun', 'Tambi', 'Straylight']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Norrath', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Faerun', 'Tambi', 'Straylight'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Faerun', 'Tambi', 'Straylight']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Norrath', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Faerun', 'Tambi', 'Straylight'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Faerun', 'Tambi', 'Straylight']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Norrath', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Faerun', 'Tambi', 'Straylight'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Faerun', 'Tambi', 'Straylight']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Norrath', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Faerun', 'Tambi', 'Straylight'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Faerun', 'Tambi', 'Straylight']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Norrath', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Faerun', 'Tambi', 'Straylight'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Faerun', 'Tambi', 'Straylight']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Norrath', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Faerun', 'Tambi', 'Straylight'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Faerun', 'Tambi', 'Straylight']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Norrath', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Faerun', 'Tambi', 'Straylight'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - starting_route: ('Tristram', 'Arbre', 90)
+[2025-09-09 07:37:42] DEBUG | root - intersection: {'Tristram'}, route: ('Snowdin', 'Tristram', 111), self.current_city: Snowdin, self.route_distance: 201
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Tristram', 'Snowdin']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Straylight', 121), self.current_city: Straylight, self.route_distance: 322
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Tristram', 'Snowdin', 'Straylight']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 452
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Norrath', 113), self.current_city: Norrath, self.route_distance: 565
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Faerun', 'Norrath', 63), self.current_city: Faerun, self.route_distance: 628
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun']
+[2025-09-09 07:37:42] DEBUG | root - route: ('AlphaCentauri', 'Faerun', 60), self.current_city: AlphaCentauri, self.route_distance: 688
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Arbre', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - starting_route: ('Faerun', 'Arbre', 83)
+[2025-09-09 07:37:42] DEBUG | root - intersection: {'Arbre'}, route: ('AlphaCentauri', 'Arbre', 108), self.current_city: AlphaCentauri, self.route_distance: 191
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Arbre', 'AlphaCentauri']
+[2025-09-09 07:37:42] DEBUG | root - route: ('AlphaCentauri', 'Snowdin', 66), self.current_city: Snowdin, self.route_distance: 257
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Arbre', 'AlphaCentauri', 'Snowdin']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Straylight', 121), self.current_city: Straylight, self.route_distance: 378
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 508
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tambi']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Norrath', 113), self.current_city: Norrath, self.route_distance: 621
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tambi', 'Norrath']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Norrath', 'Tristram', 50), self.current_city: Tristram, self.route_distance: 671
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Tristram'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Tristram'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Tristram'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Tristram'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Tristram'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Tristram'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - starting_route: ('Straylight', 'Arbre', 81)
+[2025-09-09 07:37:42] DEBUG | root - intersection: {'Straylight'}, route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 211
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Straylight', 'Tambi']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Norrath', 113), self.current_city: Norrath, self.route_distance: 324
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Straylight', 'Tambi', 'Norrath']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Norrath', 91), self.current_city: Snowdin, self.route_distance: 415
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Straylight', 'Tambi', 'Norrath', 'Snowdin']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Tristram', 111), self.current_city: Tristram, self.route_distance: 526
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Faerun', 'Tristram', 57), self.current_city: Faerun, self.route_distance: 583
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Faerun']
+[2025-09-09 07:37:42] DEBUG | root - route: ('AlphaCentauri', 'Faerun', 60), self.current_city: AlphaCentauri, self.route_distance: 643
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Faerun', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Arbre', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Faerun', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Faerun', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Arbre', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Faerun', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Faerun', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Arbre', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Faerun', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Faerun', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Arbre', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Faerun', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Faerun', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Arbre', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Faerun', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Faerun', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Arbre', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Faerun', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - starting_route: ('Snowdin', 'Arbre', 71)
+[2025-09-09 07:37:42] DEBUG | root - intersection: {'Snowdin'}, route: ('Snowdin', 'Straylight', 121), self.current_city: Snowdin, self.route_distance: 192
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Snowdin', 'Snowdin']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Tristram', 111), self.current_city: Tristram, self.route_distance: 303
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Snowdin', 'Snowdin', 'Tristram']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Faerun', 'Tristram', 57), self.current_city: Faerun, self.route_distance: 360
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Snowdin', 'Snowdin', 'Tristram', 'Faerun']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Faerun', 'Norrath', 63), self.current_city: Norrath, self.route_distance: 423
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Snowdin', 'Snowdin', 'Tristram', 'Faerun', 'Norrath']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Norrath', 113), self.current_city: Tambi, self.route_distance: 536
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Snowdin', 'Snowdin', 'Tristram', 'Faerun', 'Norrath', 'Tambi']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Straylight, self.route_distance: 666
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Snowdin', 'Snowdin', 'Tristram', 'Faerun', 'Norrath', 'Tambi', 'Straylight']
+[2025-09-09 07:37:42] DEBUG | root - route: ('AlphaCentauri', 'Straylight', 34), self.current_city: AlphaCentauri, self.route_distance: 700
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Snowdin', 'Snowdin', 'Tristram', 'Faerun', 'Norrath', 'Tambi', 'Straylight', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Arbre', 'Snowdin', 'Snowdin', 'Tristram', 'Faerun', 'Norrath', 'Tambi', 'Straylight', 'AlphaCentauri'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Snowdin', 'Snowdin', 'Tristram', 'Faerun', 'Norrath', 'Tambi', 'Straylight', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Arbre', 'Snowdin', 'Snowdin', 'Tristram', 'Faerun', 'Norrath', 'Tambi', 'Straylight', 'AlphaCentauri'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Snowdin', 'Snowdin', 'Tristram', 'Faerun', 'Norrath', 'Tambi', 'Straylight', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Arbre', 'Snowdin', 'Snowdin', 'Tristram', 'Faerun', 'Norrath', 'Tambi', 'Straylight', 'AlphaCentauri'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Snowdin', 'Snowdin', 'Tristram', 'Faerun', 'Norrath', 'Tambi', 'Straylight', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Arbre', 'Snowdin', 'Snowdin', 'Tristram', 'Faerun', 'Norrath', 'Tambi', 'Straylight', 'AlphaCentauri'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Snowdin', 'Snowdin', 'Tristram', 'Faerun', 'Norrath', 'Tambi', 'Straylight', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Arbre', 'Snowdin', 'Snowdin', 'Tristram', 'Faerun', 'Norrath', 'Tambi', 'Straylight', 'AlphaCentauri'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Snowdin', 'Snowdin', 'Tristram', 'Faerun', 'Norrath', 'Tambi', 'Straylight', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Arbre', 'Snowdin', 'Snowdin', 'Tristram', 'Faerun', 'Norrath', 'Tambi', 'Straylight', 'AlphaCentauri'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Snowdin', 'Snowdin', 'Tristram', 'Faerun', 'Norrath', 'Tambi', 'Straylight', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Arbre', 'Snowdin', 'Snowdin', 'Tristram', 'Faerun', 'Norrath', 'Tambi', 'Straylight', 'AlphaCentauri'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - starting_route: ('AlphaCentauri', 'Snowdin', 66)
+[2025-09-09 07:37:42] DEBUG | root - intersection: {'Snowdin'}, route: ('Snowdin', 'Straylight', 121), self.current_city: Snowdin, self.route_distance: 187
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Snowdin', 'Snowdin']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Tristram', 111), self.current_city: Tristram, self.route_distance: 298
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Snowdin', 'Snowdin', 'Tristram']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tristram', 'Arbre', 90), self.current_city: Arbre, self.route_distance: 388
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Faerun', 'Arbre', 83), self.current_city: Faerun, self.route_distance: 471
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'Faerun']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Faerun', 'Norrath', 63), self.current_city: Norrath, self.route_distance: 534
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'Faerun', 'Norrath']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Norrath', 113), self.current_city: Tambi, self.route_distance: 647
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'Faerun', 'Norrath', 'Tambi']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Straylight, self.route_distance: 777
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'Faerun', 'Norrath', 'Tambi', 'Straylight']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'Faerun', 'Norrath', 'Tambi', 'Straylight'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'Faerun', 'Norrath', 'Tambi', 'Straylight']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'Faerun', 'Norrath', 'Tambi', 'Straylight'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'Faerun', 'Norrath', 'Tambi', 'Straylight']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'Faerun', 'Norrath', 'Tambi', 'Straylight'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'Faerun', 'Norrath', 'Tambi', 'Straylight']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'Faerun', 'Norrath', 'Tambi', 'Straylight'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'Faerun', 'Norrath', 'Tambi', 'Straylight']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'Faerun', 'Norrath', 'Tambi', 'Straylight'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'Faerun', 'Norrath', 'Tambi', 'Straylight']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'Faerun', 'Norrath', 'Tambi', 'Straylight'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'Faerun', 'Norrath', 'Tambi', 'Straylight']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'Faerun', 'Norrath', 'Tambi', 'Straylight'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - starting_route: ('Faerun', 'Norrath', 63)
+[2025-09-09 07:37:42] DEBUG | root - intersection: {'Norrath'}, route: ('Tambi', 'Norrath', 113), self.current_city: Tambi, self.route_distance: 176
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Norrath', 'Tambi']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Straylight, self.route_distance: 306
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Norrath', 'Tambi', 'Straylight']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Straylight', 121), self.current_city: Snowdin, self.route_distance: 427
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Norrath', 'Tambi', 'Straylight', 'Snowdin']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Tristram', 111), self.current_city: Tristram, self.route_distance: 538
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tristram', 'Arbre', 90), self.current_city: Arbre, self.route_distance: 628
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre']
+[2025-09-09 07:37:42] DEBUG | root - route: ('AlphaCentauri', 'Arbre', 108), self.current_city: AlphaCentauri, self.route_distance: 736
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - starting_route: ('AlphaCentauri', 'Faerun', 60)
+[2025-09-09 07:37:42] DEBUG | root - intersection: {'AlphaCentauri'}, route: ('AlphaCentauri', 'Arbre', 108), self.current_city: AlphaCentauri, self.route_distance: 168
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'AlphaCentauri', 'AlphaCentauri']
+[2025-09-09 07:37:42] DEBUG | root - route: ('AlphaCentauri', 'Snowdin', 66), self.current_city: Snowdin, self.route_distance: 234
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'AlphaCentauri', 'AlphaCentauri', 'Snowdin']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Straylight', 121), self.current_city: Straylight, self.route_distance: 355
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'AlphaCentauri', 'AlphaCentauri', 'Snowdin', 'Straylight']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 485
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'AlphaCentauri', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tambi']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Norrath', 113), self.current_city: Norrath, self.route_distance: 598
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'AlphaCentauri', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tambi', 'Norrath']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Norrath', 'Arbre', 60), self.current_city: Arbre, self.route_distance: 658
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'AlphaCentauri', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Arbre']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tristram', 'Arbre', 90), self.current_city: Tristram, self.route_distance: 748
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'AlphaCentauri', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Arbre', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'AlphaCentauri', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Arbre', 'Tristram'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'AlphaCentauri', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Arbre', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'AlphaCentauri', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Arbre', 'Tristram'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'AlphaCentauri', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Arbre', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'AlphaCentauri', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Arbre', 'Tristram'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'AlphaCentauri', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Arbre', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'AlphaCentauri', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Arbre', 'Tristram'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'AlphaCentauri', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Arbre', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'AlphaCentauri', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Arbre', 'Tristram'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'AlphaCentauri', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Arbre', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'AlphaCentauri', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Arbre', 'Tristram'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'AlphaCentauri', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Arbre', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'AlphaCentauri', 'AlphaCentauri', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Arbre', 'Tristram'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - starting_route: ('Norrath', 'Arbre', 60)
+[2025-09-09 07:37:42] DEBUG | root - intersection: {'Norrath'}, route: ('Tambi', 'Norrath', 113), self.current_city: Tambi, self.route_distance: 173
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Norrath', 'Tambi']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Straylight, self.route_distance: 303
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Norrath', 'Tambi', 'Straylight']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Straylight', 121), self.current_city: Snowdin, self.route_distance: 424
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Norrath', 'Tambi', 'Straylight', 'Snowdin']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Tristram', 111), self.current_city: Tristram, self.route_distance: 535
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Faerun', 'Tristram', 57), self.current_city: Faerun, self.route_distance: 592
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Faerun']
+[2025-09-09 07:37:42] DEBUG | root - route: ('AlphaCentauri', 'Faerun', 60), self.current_city: AlphaCentauri, self.route_distance: 652
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Faerun', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Arbre', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Faerun', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Faerun', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Arbre', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Faerun', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Faerun', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Arbre', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Faerun', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Faerun', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Arbre', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Faerun', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Faerun', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Arbre', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Faerun', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Faerun', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Arbre', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Faerun', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - starting_route: ('Faerun', 'Tristram', 57)
+[2025-09-09 07:37:42] DEBUG | root - intersection: {'Tristram'}, route: ('Snowdin', 'Tristram', 111), self.current_city: Snowdin, self.route_distance: 168
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Tristram', 'Snowdin']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Straylight', 121), self.current_city: Straylight, self.route_distance: 289
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Tristram', 'Snowdin', 'Straylight']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 419
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Tristram', 'Snowdin', 'Straylight', 'Tambi']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Norrath', 113), self.current_city: Norrath, self.route_distance: 532
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Norrath', 'Arbre', 60), self.current_city: Arbre, self.route_distance: 592
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Arbre']
+[2025-09-09 07:37:42] DEBUG | root - route: ('AlphaCentauri', 'Arbre', 108), self.current_city: AlphaCentauri, self.route_distance: 700
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Arbre', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Arbre', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Arbre', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Arbre', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Arbre', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Arbre', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Arbre', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Arbre', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Arbre', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Arbre', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Arbre', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Arbre', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - starting_route: ('Norrath', 'Tristram', 50)
+[2025-09-09 07:37:42] DEBUG | root - intersection: {'Norrath'}, route: ('Tambi', 'Norrath', 113), self.current_city: Tambi, self.route_distance: 163
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Norrath', 'Tambi']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Straylight, self.route_distance: 293
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Norrath', 'Tambi', 'Straylight']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Straylight', 121), self.current_city: Snowdin, self.route_distance: 414
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Norrath', 'Tambi', 'Straylight', 'Snowdin']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Arbre', 71), self.current_city: Arbre, self.route_distance: 485
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Arbre']
+[2025-09-09 07:37:42] DEBUG | root - route: ('AlphaCentauri', 'Arbre', 108), self.current_city: AlphaCentauri, self.route_distance: 593
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Arbre', 'AlphaCentauri']
+[2025-09-09 07:37:42] DEBUG | root - route: ('AlphaCentauri', 'Faerun', 60), self.current_city: Faerun, self.route_distance: 653
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Arbre', 'AlphaCentauri', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Tristram', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Arbre', 'AlphaCentauri', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Arbre', 'AlphaCentauri', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Tristram', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Arbre', 'AlphaCentauri', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Arbre', 'AlphaCentauri', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Tristram', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Arbre', 'AlphaCentauri', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Arbre', 'AlphaCentauri', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Tristram', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Arbre', 'AlphaCentauri', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Arbre', 'AlphaCentauri', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Tristram', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Arbre', 'AlphaCentauri', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Arbre', 'AlphaCentauri', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Tristram', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Arbre', 'AlphaCentauri', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - starting_route: ('Tambi', 'Arbre', 40)
+[2025-09-09 07:37:42] DEBUG | root - intersection: {'Tambi'}, route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 170
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Tambi', 'Tambi']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Norrath', 113), self.current_city: Norrath, self.route_distance: 283
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Tambi', 'Tambi', 'Norrath']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Norrath', 91), self.current_city: Snowdin, self.route_distance: 374
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Tambi', 'Tambi', 'Norrath', 'Snowdin']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Straylight', 121), self.current_city: Straylight, self.route_distance: 495
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight']
+[2025-09-09 07:37:42] DEBUG | root - route: ('AlphaCentauri', 'Straylight', 34), self.current_city: AlphaCentauri, self.route_distance: 529
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'AlphaCentauri']
+[2025-09-09 07:37:42] DEBUG | root - route: ('AlphaCentauri', 'Faerun', 60), self.current_city: Faerun, self.route_distance: 589
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'AlphaCentauri', 'Faerun']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Faerun', 'Tristram', 57), self.current_city: Tristram, self.route_distance: 646
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'AlphaCentauri', 'Faerun', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Arbre', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'AlphaCentauri', 'Faerun', 'Tristram'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'AlphaCentauri', 'Faerun', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Arbre', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'AlphaCentauri', 'Faerun', 'Tristram'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'AlphaCentauri', 'Faerun', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Arbre', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'AlphaCentauri', 'Faerun', 'Tristram'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'AlphaCentauri', 'Faerun', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Arbre', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'AlphaCentauri', 'Faerun', 'Tristram'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'AlphaCentauri', 'Faerun', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Arbre', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'AlphaCentauri', 'Faerun', 'Tristram'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'AlphaCentauri', 'Faerun', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Arbre', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'AlphaCentauri', 'Faerun', 'Tristram'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Arbre', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'AlphaCentauri', 'Faerun', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Arbre', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'AlphaCentauri', 'Faerun', 'Tristram'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - starting_route: ('Tambi', 'Faerun', 39)
+[2025-09-09 07:37:42] DEBUG | root - intersection: {'Tambi'}, route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 169
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Tambi', 'Tambi']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Norrath', 113), self.current_city: Norrath, self.route_distance: 282
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Tambi', 'Tambi', 'Norrath']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Norrath', 91), self.current_city: Snowdin, self.route_distance: 373
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Tambi', 'Tambi', 'Norrath', 'Snowdin']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Straylight', 121), self.current_city: Straylight, self.route_distance: 494
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Straylight', 'Arbre', 81), self.current_city: Arbre, self.route_distance: 575
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre']
+[2025-09-09 07:37:42] DEBUG | root - route: ('AlphaCentauri', 'Arbre', 108), self.current_city: AlphaCentauri, self.route_distance: 683
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'AlphaCentauri']
+[2025-09-09 07:37:42] DEBUG | root - route: ('AlphaCentauri', 'Tristram', 3), self.current_city: Tristram, self.route_distance: 686
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'AlphaCentauri', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'AlphaCentauri', 'Tristram'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'AlphaCentauri', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'AlphaCentauri', 'Tristram'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'AlphaCentauri', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'AlphaCentauri', 'Tristram'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'AlphaCentauri', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'AlphaCentauri', 'Tristram'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'AlphaCentauri', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'AlphaCentauri', 'Tristram'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'AlphaCentauri', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'AlphaCentauri', 'Tristram'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'AlphaCentauri', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'AlphaCentauri', 'Tristram'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - starting_route: ('Tambi', 'Tristram', 35)
+[2025-09-09 07:37:42] DEBUG | root - intersection: {'Tambi'}, route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 165
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Tambi', 'Tambi']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Norrath', 113), self.current_city: Norrath, self.route_distance: 278
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Tambi', 'Tambi', 'Norrath']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Norrath', 91), self.current_city: Snowdin, self.route_distance: 369
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Tambi', 'Tambi', 'Norrath', 'Snowdin']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Straylight', 121), self.current_city: Straylight, self.route_distance: 490
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Straylight', 'Arbre', 81), self.current_city: Arbre, self.route_distance: 571
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre']
+[2025-09-09 07:37:42] DEBUG | root - route: ('AlphaCentauri', 'Arbre', 108), self.current_city: AlphaCentauri, self.route_distance: 679
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'AlphaCentauri']
+[2025-09-09 07:37:42] DEBUG | root - route: ('AlphaCentauri', 'Faerun', 60), self.current_city: Faerun, self.route_distance: 739
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'AlphaCentauri', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Tristram', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'AlphaCentauri', 'Faerun'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'AlphaCentauri', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Tristram', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'AlphaCentauri', 'Faerun'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'AlphaCentauri', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Tristram', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'AlphaCentauri', 'Faerun'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'AlphaCentauri', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Tristram', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'AlphaCentauri', 'Faerun'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'AlphaCentauri', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Tristram', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'AlphaCentauri', 'Faerun'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'AlphaCentauri', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Tristram', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'AlphaCentauri', 'Faerun'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'AlphaCentauri', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Tristram', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'AlphaCentauri', 'Faerun'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - starting_route: ('AlphaCentauri', 'Norrath', 34)
+[2025-09-09 07:37:42] DEBUG | root - intersection: {'Norrath'}, route: ('Tambi', 'Norrath', 113), self.current_city: Tambi, self.route_distance: 147
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Norrath', 'Tambi']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Straylight, self.route_distance: 277
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Norrath', 'Tambi', 'Straylight']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Straylight', 121), self.current_city: Snowdin, self.route_distance: 398
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Norrath', 'Tambi', 'Straylight', 'Snowdin']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Tristram', 111), self.current_city: Tristram, self.route_distance: 509
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tristram', 'Arbre', 90), self.current_city: Arbre, self.route_distance: 599
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Faerun', 'Arbre', 83), self.current_city: Faerun, self.route_distance: 682
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Norrath', 'Tambi', 'Straylight', 'Snowdin', 'Tristram', 'Arbre', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - starting_route: ('AlphaCentauri', 'Straylight', 34)
+[2025-09-09 07:37:42] DEBUG | root - intersection: {'Straylight'}, route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 164
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Straylight', 'Tambi']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Norrath', 113), self.current_city: Norrath, self.route_distance: 277
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Straylight', 'Tambi', 'Norrath']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Norrath', 91), self.current_city: Snowdin, self.route_distance: 368
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Straylight', 'Tambi', 'Norrath', 'Snowdin']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Tristram', 111), self.current_city: Tristram, self.route_distance: 479
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tristram', 'Arbre', 90), self.current_city: Arbre, self.route_distance: 569
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Arbre']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Faerun', 'Arbre', 83), self.current_city: Faerun, self.route_distance: 652
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Arbre', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Arbre', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Arbre', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Arbre', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Arbre', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Arbre', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Arbre', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Arbre', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Arbre', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Arbre', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Arbre', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Arbre', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - starting_route: ('AlphaCentauri', 'Tambi', 28)
+[2025-09-09 07:37:42] DEBUG | root - intersection: {'Tambi'}, route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 158
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tambi', 'Tambi']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Norrath', 113), self.current_city: Norrath, self.route_distance: 271
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tambi', 'Tambi', 'Norrath']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Norrath', 91), self.current_city: Snowdin, self.route_distance: 362
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tambi', 'Tambi', 'Norrath', 'Snowdin']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Straylight', 121), self.current_city: Straylight, self.route_distance: 483
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Straylight', 'Arbre', 81), self.current_city: Arbre, self.route_distance: 564
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tristram', 'Arbre', 90), self.current_city: Tristram, self.route_distance: 654
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'Tristram']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Faerun', 'Tristram', 57), self.current_city: Faerun, self.route_distance: 711
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'Tristram', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'Tristram', 'Faerun'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'Tristram', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'Tristram', 'Faerun'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'Tristram', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'Tristram', 'Faerun'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'Tristram', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'Tristram', 'Faerun'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'Tristram', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'Tristram', 'Faerun'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'Tristram', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'Tristram', 'Faerun'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'Tristram', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Tambi', 'Tambi', 'Norrath', 'Snowdin', 'Straylight', 'Arbre', 'Tristram', 'Faerun'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - starting_route: ('Straylight', 'Tristram', 27)
+[2025-09-09 07:37:42] DEBUG | root - intersection: {'Straylight'}, route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 157
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Straylight', 'Tambi']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Norrath', 113), self.current_city: Norrath, self.route_distance: 270
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Straylight', 'Tambi', 'Norrath']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Norrath', 91), self.current_city: Snowdin, self.route_distance: 361
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Straylight', 'Tambi', 'Norrath', 'Snowdin']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Arbre', 71), self.current_city: Arbre, self.route_distance: 432
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Arbre']
+[2025-09-09 07:37:42] DEBUG | root - route: ('AlphaCentauri', 'Arbre', 108), self.current_city: AlphaCentauri, self.route_distance: 540
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Arbre', 'AlphaCentauri']
+[2025-09-09 07:37:42] DEBUG | root - route: ('AlphaCentauri', 'Faerun', 60), self.current_city: Faerun, self.route_distance: 600
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Arbre', 'AlphaCentauri', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Tristram', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Arbre', 'AlphaCentauri', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Arbre', 'AlphaCentauri', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Tristram', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Arbre', 'AlphaCentauri', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Arbre', 'AlphaCentauri', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Tristram', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Arbre', 'AlphaCentauri', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Arbre', 'AlphaCentauri', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Tristram', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Arbre', 'AlphaCentauri', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Arbre', 'AlphaCentauri', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Tristram', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Arbre', 'AlphaCentauri', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Tristram', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Arbre', 'AlphaCentauri', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Tristram', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Arbre', 'AlphaCentauri', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - starting_route: ('Snowdin', 'Tambi', 22)
+[2025-09-09 07:37:42] DEBUG | root - intersection: {'Tambi'}, route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 152
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Snowdin', 'Tambi', 'Tambi']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Norrath', 113), self.current_city: Norrath, self.route_distance: 265
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Snowdin', 'Tambi', 'Tambi', 'Norrath']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Faerun', 'Norrath', 63), self.current_city: Faerun, self.route_distance: 328
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Snowdin', 'Tambi', 'Tambi', 'Norrath', 'Faerun']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Faerun', 'Arbre', 83), self.current_city: Arbre, self.route_distance: 411
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Snowdin', 'Tambi', 'Tambi', 'Norrath', 'Faerun', 'Arbre']
+[2025-09-09 07:37:42] DEBUG | root - route: ('AlphaCentauri', 'Arbre', 108), self.current_city: AlphaCentauri, self.route_distance: 519
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Snowdin', 'Tambi', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri']
+[2025-09-09 07:37:42] DEBUG | root - route: ('AlphaCentauri', 'Straylight', 34), self.current_city: Straylight, self.route_distance: 553
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Snowdin', 'Tambi', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri', 'Straylight']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Straylight', 'Tristram', 27), self.current_city: Tristram, self.route_distance: 580
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Snowdin', 'Tambi', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri', 'Straylight', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Snowdin', 'Tambi', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri', 'Straylight', 'Tristram'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Snowdin', 'Tambi', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri', 'Straylight', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Snowdin', 'Tambi', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri', 'Straylight', 'Tristram'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Snowdin', 'Tambi', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri', 'Straylight', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Snowdin', 'Tambi', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri', 'Straylight', 'Tristram'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Snowdin', 'Tambi', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri', 'Straylight', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Snowdin', 'Tambi', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri', 'Straylight', 'Tristram'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Snowdin', 'Tambi', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri', 'Straylight', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Snowdin', 'Tambi', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri', 'Straylight', 'Tristram'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Snowdin', 'Tambi', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri', 'Straylight', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Snowdin', 'Tambi', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri', 'Straylight', 'Tristram'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Snowdin', 'Tambi', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri', 'Straylight', 'Tristram']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Snowdin', 'Tambi', 'Tambi', 'Norrath', 'Faerun', 'Arbre', 'AlphaCentauri', 'Straylight', 'Tristram'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - starting_route: ('Faerun', 'Straylight', 21)
+[2025-09-09 07:37:42] DEBUG | root - intersection: {'Straylight'}, route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 151
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Straylight', 'Tambi']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Norrath', 113), self.current_city: Norrath, self.route_distance: 264
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Straylight', 'Tambi', 'Norrath']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Norrath', 91), self.current_city: Snowdin, self.route_distance: 355
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Straylight', 'Tambi', 'Norrath', 'Snowdin']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Tristram', 111), self.current_city: Tristram, self.route_distance: 466
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tristram', 'Arbre', 90), self.current_city: Arbre, self.route_distance: 556
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Arbre']
+[2025-09-09 07:37:42] DEBUG | root - route: ('AlphaCentauri', 'Arbre', 108), self.current_city: AlphaCentauri, self.route_distance: 664
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Straylight', 'Tambi', 'Norrath', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - starting_route: ('Snowdin', 'Faerun', 12)
+[2025-09-09 07:37:42] DEBUG | root - intersection: {'Snowdin'}, route: ('Snowdin', 'Straylight', 121), self.current_city: Snowdin, self.route_distance: 133
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Snowdin', 'Snowdin']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Tristram', 111), self.current_city: Tristram, self.route_distance: 244
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Snowdin', 'Snowdin', 'Tristram']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tristram', 'Arbre', 90), self.current_city: Arbre, self.route_distance: 334
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre']
+[2025-09-09 07:37:42] DEBUG | root - route: ('AlphaCentauri', 'Arbre', 108), self.current_city: AlphaCentauri, self.route_distance: 442
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri']
+[2025-09-09 07:37:42] DEBUG | root - route: ('AlphaCentauri', 'Norrath', 34), self.current_city: Norrath, self.route_distance: 476
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Norrath']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Norrath', 113), self.current_city: Tambi, self.route_distance: 589
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Norrath', 'Tambi']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Straylight, self.route_distance: 719
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Norrath', 'Tambi', 'Straylight']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Norrath', 'Tambi', 'Straylight'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Norrath', 'Tambi', 'Straylight']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Norrath', 'Tambi', 'Straylight'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Norrath', 'Tambi', 'Straylight']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Norrath', 'Tambi', 'Straylight'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Norrath', 'Tambi', 'Straylight']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Norrath', 'Tambi', 'Straylight'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Norrath', 'Tambi', 'Straylight']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Norrath', 'Tambi', 'Straylight'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Norrath', 'Tambi', 'Straylight']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Norrath', 'Tambi', 'Straylight'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Faerun', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Norrath', 'Tambi', 'Straylight']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Faerun', 'Snowdin', 'Snowdin', 'Tristram', 'Arbre', 'AlphaCentauri', 'Norrath', 'Tambi', 'Straylight'], num of visited cities: 9
+[2025-09-09 07:37:42] DEBUG | root - starting_route: ('Norrath', 'Straylight', 9)
+[2025-09-09 07:37:42] DEBUG | root - intersection: {'Straylight'}, route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 139
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Straylight', 'Tambi']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Arbre', 40), self.current_city: Arbre, self.route_distance: 179
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Straylight', 'Tambi', 'Arbre']
+[2025-09-09 07:37:42] DEBUG | root - route: ('AlphaCentauri', 'Arbre', 108), self.current_city: AlphaCentauri, self.route_distance: 287
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Straylight', 'Tambi', 'Arbre', 'AlphaCentauri']
+[2025-09-09 07:37:42] DEBUG | root - route: ('AlphaCentauri', 'Snowdin', 66), self.current_city: Snowdin, self.route_distance: 353
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Straylight', 'Tambi', 'Arbre', 'AlphaCentauri', 'Snowdin']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Tristram', 111), self.current_city: Tristram, self.route_distance: 464
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Straylight', 'Tambi', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Tristram']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Faerun', 'Tristram', 57), self.current_city: Faerun, self.route_distance: 521
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Straylight', 'Tambi', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Tristram', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Norrath', 'Straylight', 'Tambi', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Tristram', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Straylight', 'Tambi', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Tristram', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Norrath', 'Straylight', 'Tambi', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Tristram', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Straylight', 'Tambi', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Tristram', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Norrath', 'Straylight', 'Tambi', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Tristram', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Straylight', 'Tambi', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Tristram', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Norrath', 'Straylight', 'Tambi', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Tristram', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Straylight', 'Tambi', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Tristram', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Norrath', 'Straylight', 'Tambi', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Tristram', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['Norrath', 'Straylight', 'Tambi', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Tristram', 'Faerun']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['Norrath', 'Straylight', 'Tambi', 'Arbre', 'AlphaCentauri', 'Snowdin', 'Tristram', 'Faerun'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - starting_route: ('AlphaCentauri', 'Tristram', 3)
+[2025-09-09 07:37:42] DEBUG | root - intersection: {'Tristram'}, route: ('Snowdin', 'Tristram', 111), self.current_city: Snowdin, self.route_distance: 114
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tristram', 'Snowdin']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Snowdin', 'Straylight', 121), self.current_city: Straylight, self.route_distance: 235
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tristram', 'Snowdin', 'Straylight']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Straylight', 130), self.current_city: Tambi, self.route_distance: 365
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tristram', 'Snowdin', 'Straylight', 'Tambi']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Tambi', 'Norrath', 113), self.current_city: Norrath, self.route_distance: 478
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Faerun', 'Norrath', 63), self.current_city: Faerun, self.route_distance: 541
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun']
+[2025-09-09 07:37:42] DEBUG | root - route: ('Faerun', 'Arbre', 83), self.current_city: Arbre, self.route_distance: 624
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre'], num of visited cities: 8
+[2025-09-09 07:37:42] DEBUG | root - ** self.route_order: ['AlphaCentauri', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre']
+[2025-09-09 07:37:42] INFO | root - Failed route: ['AlphaCentauri', 'Tristram', 'Snowdin', 'Straylight', 'Tambi', 'Norrath', 'Faerun', 'Arbre'], num of visited cities: 8
