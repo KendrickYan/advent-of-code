@@ -1,9 +1,10 @@
-[2025-10-12 21:04:45] DEBUG | root - self.distances_data:
-{'AlphaCentauri': {'Snowdin': 66, 'Tambi': 28, 'Faerun': 60, 'Norrath': 34, 'Straylight': 34, 'Tristram': 3, 'Arbre': 108}, 'Snowdin': {'AlphaCentauri': 66, 'Tambi': 22, 'Faerun': 12, 'Norrath': 91, 'Straylight': 121, 'Tristram': 111, 'Arbre': 71}, 'Tambi': {'AlphaCentauri': 28, 'Snowdin': 22, 'Faerun': 39, 'Norrath': 113, 'Straylight': 130, 'Tristram': 35, 'Arbre': 40}, 'Faerun': {'AlphaCentauri': 60, 'Snowdin': 12, 'Tambi': 39, 'Norrath': 63, 'Straylight': 21, 'Tristram': 57, 'Arbre': 83}, 'Norrath': {'AlphaCentauri': 34, 'Snowdin': 91, 'Tambi': 113, 'Faerun': 63, 'Straylight': 9, 'Tristram': 50, 'Arbre': 60}, 'Straylight': {'AlphaCentauri': 34, 'Snowdin': 121, 'Tambi': 130, 'Faerun': 21, 'Norrath': 9, 'Tristram': 27, 'Arbre': 81}, 'Tristram': {'AlphaCentauri': 3, 'Snowdin': 111, 'Tambi': 35, 'Faerun': 57, 'Norrath': 50, 'Straylight': 27, 'Arbre': 90}, 'Arbre': {'AlphaCentauri': 108, 'Snowdin': 71, 'Tambi': 40, 'Faerun': 83, 'Norrath': 60, 'Straylight': 81, 'Tristram': 90}}
-total: 8
-[2025-10-12 21:04:45] DEBUG | root - current_city: AlphaCentauri, next_closest_city: Tristram
-[2025-10-12 21:04:45] DEBUG | root - current_city: Tristram, next_closest_city: AlphaCentauri
-[2025-10-12 21:04:45] INFO | root - Reached dead end :(                         
-path: ['AlphaCentauri', 'Tristram']                         
-next_closest_city: AlphaCentauri                         
-result: 3
+[2025-10-13 11:50:24] DEBUG | root - self.distances_data:
+{'AlphaCentauri': [('Tristram', 3), ('Tambi', 28), ('Norrath', 34), ('Straylight', 34), ('Faerun', 60), ('Snowdin', 66), ('Arbre', 108)], 'Snowdin': [('Faerun', 12), ('Tambi', 22), ('AlphaCentauri', 66), ('Arbre', 71), ('Norrath', 91), ('Tristram', 111), ('Straylight', 121)], 'Tambi': [('Snowdin', 22), ('AlphaCentauri', 28), ('Tristram', 35), ('Faerun', 39), ('Arbre', 40), ('Norrath', 113), ('Straylight', 130)], 'Faerun': [('Snowdin', 12), ('Straylight', 21), ('Tambi', 39), ('Tristram', 57), ('AlphaCentauri', 60), ('Norrath', 63), ('Arbre', 83)], 'Norrath': [('Straylight', 9), ('AlphaCentauri', 34), ('Tristram', 50), ('Arbre', 60), ('Faerun', 63), ('Snowdin', 91), ('Tambi', 113)], 'Straylight': [('Norrath', 9), ('Faerun', 21), ('Tristram', 27), ('AlphaCentauri', 34), ('Arbre', 81), ('Snowdin', 121), ('Tambi', 130)], 'Tristram': [('AlphaCentauri', 3), ('Straylight', 27), ('Tambi', 35), ('Norrath', 50), ('Faerun', 57), ('Arbre', 90), ('Snowdin', 111)], 'Arbre': [('Tambi', 40), ('Norrath', 60), ('Snowdin', 71), ('Straylight', 81), ('Faerun', 83), ('Tristram', 90), ('AlphaCentauri', 108)]}
+[2025-10-13 11:50:24] DEBUG | root - Completed path: ['AlphaCentauri', 'Tristram', 'Straylight', 'Norrath', 'Arbre', 'Tambi', 'Snowdin', 'Faerun'], Cost: 173
+[2025-10-13 11:50:24] DEBUG | root - Completed path: ['Snowdin', 'Faerun', 'Straylight', 'Norrath', 'AlphaCentauri', 'Tristram', 'Tambi', 'Arbre'], Cost: 154
+[2025-10-13 11:50:24] DEBUG | root - Completed path: ['Tambi', 'Snowdin', 'Faerun', 'Straylight', 'Norrath', 'AlphaCentauri', 'Tristram', 'Arbre'], Cost: 191
+[2025-10-13 11:50:24] DEBUG | root - Completed path: ['Faerun', 'Snowdin', 'Tambi', 'AlphaCentauri', 'Tristram', 'Straylight', 'Norrath', 'Arbre'], Cost: 161
+[2025-10-13 11:50:24] DEBUG | root - Completed path: ['Norrath', 'Straylight', 'Faerun', 'Snowdin', 'Tambi', 'AlphaCentauri', 'Tristram', 'Arbre'], Cost: 185
+[2025-10-13 11:50:24] DEBUG | root - Completed path: ['Straylight', 'Norrath', 'AlphaCentauri', 'Tristram', 'Tambi', 'Snowdin', 'Faerun', 'Arbre'], Cost: 198
+[2025-10-13 11:50:24] DEBUG | root - Completed path: ['Tristram', 'AlphaCentauri', 'Tambi', 'Snowdin', 'Faerun', 'Straylight', 'Norrath', 'Arbre'], Cost: 155
+[2025-10-13 11:50:24] DEBUG | root - Completed path: ['Arbre', 'Tambi', 'Snowdin', 'Faerun', 'Straylight', 'Norrath', 'AlphaCentauri', 'Tristram'], Cost: 141
