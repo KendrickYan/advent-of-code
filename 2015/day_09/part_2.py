@@ -41,142 +41,80 @@ def write_logs(filename: str = 'general.log', log_level: int = logging.DEBUG) ->
 def get_input(filename: str = 'input.txt') -> str:
     with open(filename, 'r') as f:
         return f.read()
-    
+
 class FindLongestRoute:
     '''
     Takes a list of distances.
-    
+
     Returns the distance of the longest route between any 2 locations.
     '''
 
     def __init__(self, distances_list: list[str]) -> None:
-        self.distances_data = self.parse_input(distances_list)
-        logging.debug(f'self.distances_data: {self.distances_data}')
-        self.found_routes = []
+        self.distances_data = self.parse_data(distances_list)
+        self.total_num_cities = len(self.distances_data.keys())
+        logging.debug(f'self.distances_data:\n{self.distances_data}')
+        self.all_paths = []
+        self.current_path = []
+        self.next_city = ''
+        self.cost = 0
+        self.path_taken = [] 
+        self.result = 0
 
-        self.run()
-        self.result = max(self.found_routes) if len(self.found_routes) > 0 else 'NOT FOUND'
+        self.path_taken, self.result = self.run()
 
-    def parse_input(self, distances_list: list[str]) -> list[tuple[str, str, int]]:
-        '''Parses the input into a list of tuples. Sort the list in order of longest distance'''
-        distances_data = []
-        for distance in distances_list:
-            distance_line = distance.split(' ')
-            distances_data.append((distance_line[0], distance_line[2], int(distance_line[-1])))
+    def parse_data(self, data: list[str]) -> dict[str, list[tuple[str, int]]]:
+        parsed_data = {}
+        for line in data:
+            sep_words = line.split(' ')
+            city_1 = sep_words[0]
+            city_2 = sep_words[2]
+            dist = int(sep_words[-1])
+            key_list = parsed_data.keys()
 
-        # Sort the list in order of longest distance
-        distances_data = sorted(distances_data, key=lambda x: x[2], reverse=True)
-        return distances_data
-
-    def start_route(self, starting_route: tuple[str, str, int]) -> None:
-        '''Starts the route-finding algorithm. Takes the starting route'''
-
-        # Since it is the starting city
-        if self.current_city == '':
-
-            # Take the first distance as the starting cities.
-            logging.debug(f'starting_route: {starting_route}')
-            self.route_distance += starting_route[2]
-
-            remaining_routes = self.distances_data.copy()
-
-            # Remove that route
-            remaining_routes.remove(starting_route)
-
-            # Find the next longest distance with a common city
-            for route in remaining_routes:
-                if len(set(starting_route).intersection(route)) == 1:
-
-                    common_city = set(starting_route).intersection(route)
-
-                    # The first city in the route is the one that is not the common city in the next route (actually next distance, poor naming convention here)
-                    first_city = starting_route[0] if starting_route[1] in common_city else starting_route[1]
-                    
-                    # Add the starting cities to the order
-                    self.route_order.extend([first_city, list(common_city)[0]])
-
-                    # Set the UNCOMMON city to self.current_city
-                    self.current_city = route[0] if route[0] != common_city else route[1]
-
-                    # Add the current city to the order
-                    self.route_order.append(self.current_city)
-
-                    # Tally the distance of the entire route
-                    self.route_distance += route[2]
-
-                    logging.debug(f'intersection: {common_city}, route: {route}, self.current_city: {self.current_city}, self.route_distance: {self.route_distance}')
-
-                    # Remove that route
-                    remaining_routes.remove(route)
-
-                    if self.go_next_city(remaining_routes) == 0:
-                        print(f'Successful route: {self.route_order}, total distance: {self.route_distance}')
-                        self.found_routes.append(len(self.route_order))
-
-                    break # find the next route with common city
-
-    def go_next_city(self, remaining_routes: list[tuple[str, str, int]]) -> int:
-        '''From the starting route, go to the next nearest city until all cities are visted or stuck at a dead end.
-        
-        Returns exit code. 0 for no error. 1 for reaching dead end.'''
-
-        exit_code = 0
-
-        while len(remaining_routes) > 0:
-
-            # logging.debug(f'* remaining_routes: {remaining_routes}')
-            logging.debug(f'** self.route_order: {self.route_order}')
-            
-            for route in remaining_routes:
-                # logging.debug(f'Checking {route} for {self.current_city}')
-
-                if self.current_city in route and len(set(self.route_order).intersection(route)) == 1:
-
-                    # logging.debug(f'intersection: {set(self.route_order).intersection(route)}')
-
-                    # Set the new self.current_city
-                    self.current_city = route[0] if route[0] != self.current_city else route[1]
-
-                    # Add the current city to the order
-                    self.route_order.append(self.current_city)
-
-                    # Tally the distance of the entire route
-                    self.route_distance += route[2]
-
-                    logging.debug(f'route: {route}, self.current_city: {self.current_city}, self.route_distance: {self.route_distance}')
-                    
-                    # Remove that route
-                    remaining_routes.remove(route)
-
-                    if self.go_next_city(remaining_routes) == 0:
-                        print(f'Successful route: {self.route_order}, total distance: {self.route_distance}')
-                        self.found_routes.append(len(self.route_order))
-
-                    break
-                
+            if city_1 in key_list:
+                parsed_data[city_1].append((city_2, dist))
             else:
-                logging.info(f'Failed route: {self.route_order}, num of visited cities: {len(self.route_order)}')
-                exit_code = 1
-                break # out of the for loop if route is not found
+                parsed_data[city_1] = [(city_2, dist)]
 
-        return exit_code
+            if city_2 in key_list:
+                parsed_data[city_2].append((city_1, dist))
+            else:
+                parsed_data[city_2] = [(city_1, dist)]
 
-    def run(self) -> None:
-        for i in range(len(self.distances_data)):
+        parsed_data = {k : sorted(v, key=lambda x: x[1], reverse=True) for k, v in parsed_data.items()}
+        return parsed_data
 
-            # Reset variables
-            self.current_city = ''
-            self.route_distance = 0
-            self.route_order = []
-            
-            rem_routes = self.start_route(self.distances_data[i])
+    def furthest_city_from(self, current_city: str) -> int | None:
+        next_furthest_city = ''
+        for value in self.distances_data[current_city]:
+            if value[0] in self.current_path:
+                continue
+            next_furthest_city = value[0]
+            self.cost += value[1]
+            self.current_path.append(next_furthest_city)
+            return self.furthest_city_from(next_furthest_city)
+        else:
+            return 0
+
+    def run(self) -> tuple[list[str], int]:
+        for starting_city in self.distances_data.keys():
+            self.current_path.append(starting_city)
+            ret = self.furthest_city_from(starting_city)
+            if ret is not None and ret == 0:
+                logging.debug(f'Completed path: {self.current_path}, Cost: {self.cost}')
+                self.all_paths.append((self.current_path, self.cost))
+                self.current_path = []
+                self.cost = 0
+                continue
+        sorted_paths = sorted(self.all_paths, key=lambda x: x[1], reverse=True)
+        return sorted_paths[0]
 
 def main() -> None:
     write_logs('part_2.log')
     distances_list = get_input().splitlines()
     longest_route = FindLongestRoute(distances_list)
-    print(f'Answer: {longest_route.result}')    
+    print(f'Answer: {longest_route.result}')
+    print(f'Path taken: {longest_route.path_taken}')
 
 if __name__ == '__main__':
-    # 863 is too high
     main()
