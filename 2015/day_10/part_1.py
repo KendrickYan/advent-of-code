@@ -38,14 +38,38 @@ def write_logs(filename: str = 'general.log', log_level: int = logging.DEBUG) ->
     logging.basicConfig(filename='logs/' + filename, filemode='w', format='[%(asctime)s] %(levelname)s | %(name)s - %(message)s', level=log_level, datefmt='%Y-%m-%d %H:%M:%S')
     logging.handlers.RotatingFileHandler(filename='logs/' + filename, maxBytes=10*1024*1024, backupCount=5) # 10MB, 5 files max
 
-def get_input(filename: str = 'input.txt') -> str:
-    with open(filename, 'r') as f:
-        return f.read()
+class LookAndSay:
 
-class SomeClass:
-    def __init__(self) -> None:
-        pass
+    def __init__(self, puzzle_input: str, loop_count: int) -> None:
+        self.result = self.run(puzzle_input, loop_count)
 
+    def generate_sequence(self, old_sequence: str) -> str:
+        new_sequence = []
+        count = 1
+        prev_num = ''
+        for num in old_sequence:
+            if prev_num != '':
+                if num == prev_num:
+                    count += 1
+                else:
+                    new_sequence.extend([str(count), prev_num])
+                    count = 1
+            prev_num = num
+        else:
+            # upon reaching end of given_sequence
+            new_sequence.extend([str(count), prev_num])
+        return ''.join(new_sequence)
 
+    def run(self, puzzle_input: str, loop_count: int) -> str:
+        new_sequence = self.generate_sequence(puzzle_input)
+        for c in range(loop_count - 1):
+            logging.debug(f'Loop count: {c+1}')
+            new_sequence = self.generate_sequence(new_sequence)
+        return new_sequence
+        
 if __name__ == '__main__':
-    input = '1113222113'
+    write_logs('part_1.log')
+    puz_input = '1113222113'
+    lns = LookAndSay(puz_input, 40)
+    # print(f'Result: {lns.result}')
+    print(f'Length: {len(lns.result)}')
