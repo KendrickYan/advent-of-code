@@ -43,30 +43,62 @@ class PasswordIncrementer:
     # increase rightmost letter by 1 step until all rules are met
 
     def __init__(self, current_pass: str) -> None:
-        self.result = self.increment_password(current_pass)
-        # self.result = self.run(current_pass)
+        self.result = self.run(current_pass)
 
-    def increment_password(self, current_pass: str) -> str:
+    def increment_password(self, current_pass: str, pos: int = -1) -> str:
         # takes current password, increments rightmost letter by 1 step and returns the new password
-        bcurrent_pass = current_pass.encode()
-        pass
+        chr_to_incr = current_pass[pos]
+
+        if chr_to_incr == 'z':
+            new_chr = 'a'
+            current_pass = self.increment_password(current_pass, pos-1)
+        else:
+            new_chr = chr(ord(chr_to_incr) + 1)
+
+        trial_pass = current_pass[0:pos] + new_chr + current_pass[pos:-1]
+        
+        return trial_pass
 
     def meets_rule_1(self, password: str) -> bool:
         # Rule 1: >= 3 consecutive letters (like abc or xyz)
-        pass
+        bpassword = password.encode()
+        for i, byte in enumerate(bpassword):
+            # rule is not met when 2nd last letter is reached
+            if i >= len(bpassword) - 2:
+                return False
+            
+            if byte + 1 == bpassword[i+1] and byte + 2 == bpassword[i+2]:
+                return True
+        else:
+            # should never come here
+            return False
 
     def meets_rule_2(self, password: str) -> bool:
         # Rule 2: does NOT contain i, o, l
-        pass
+        for char in password:
+            if char in ['i', 'o', 'l']:
+                return False
+        else:
+            return True
 
     def meets_rule_3(self, password: str) -> bool:
         # Rule 3: >= 2 different pairs (like aa AND bb)
-        pass
+        for i, char in enumerate(password):
+            # rule is not met when last letter is reached
+            if i >= len(password) - 1:
+                return False
+            
+            if char == password[i+1]:
+                return True
+        else:
+            # should never come here
+            return False
 
     def run(self, current_pass: str) -> str:
+        trial_password = current_pass
         while True:
-            trial_password = self.increment_password(current_pass)
-            if self.meets_rule_1 is True or self.meets_rule_2 is True or self.meets_rule_3 is True:
+            trial_password = self.increment_password(trial_password)
+            if self.meets_rule_1(trial_password) and self.meets_rule_2(trial_password) and self.meets_rule_3(trial_password):
                 return trial_password
 
 if __name__ == '__main__':
