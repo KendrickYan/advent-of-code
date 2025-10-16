@@ -83,16 +83,19 @@ class PasswordIncrementer:
 
     def meets_rule_3(self, password: str) -> bool:
         # Rule 3: >= 2 different pairs (like aa AND bb)
+        pair_list = []
         for i, char in enumerate(password):
             # rule is not met when last letter is reached
             if i >= len(password) - 1:
-                return False
+                break
             
-            if char == password[i+1]:
-                return True
-        else:
-            # should never come here
-            return False
+            if char == password[i+1] and char not in pair_list:
+                pair_list.append(char)
+        
+        if len(pair_list) >= 2:
+            return True
+        # should never come here
+        return False
 
     def run(self, current_pass: str) -> str:
         trial_password = current_pass
