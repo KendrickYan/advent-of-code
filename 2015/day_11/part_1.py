@@ -109,3 +109,5 @@ if __name__ == '__main__':
     puzzle_input = 'cqjxjnds'
     pass_inc = PasswordIncrementer(puzzle_input)
     print(f'Next password: {pass_inc.result}')
+    pass_inc = PasswordIncrementer('cqjxxyzz')
+    print(f'Part 2 password: {pass_inc.result}')
